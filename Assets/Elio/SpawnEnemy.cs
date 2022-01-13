@@ -12,7 +12,7 @@ public class SpawnEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        areThereEnemiesAlive = waveAmount[waveNumber];
     }
     IEnumerator EnemySpawnCooldown()
     {
@@ -22,14 +22,14 @@ public class SpawnEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print(i);
         //Spawns the enemy according to the amount speciefied in waveAmount with a half second interval
-        for(i = 0; i <= waveAmount[waveNumber]; i++)
+        for(i = 0; i < waveAmount[waveNumber]; i++)
         {
             if(i == 0)
             {
                 areThereEnemiesAlive = waveAmount[waveNumber];
             }
-            EnemySpawnCooldown();
             SpawnsEnemy();
             
         }
@@ -43,6 +43,7 @@ public class SpawnEnemy : MonoBehaviour
 
     public void SpawnsEnemy()
     {
+        EnemySpawnCooldown();
         Instantiate(enemyPrefab);
     }
 }
