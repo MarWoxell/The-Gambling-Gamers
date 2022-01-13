@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 1;
     }
 
     public void Begin()
