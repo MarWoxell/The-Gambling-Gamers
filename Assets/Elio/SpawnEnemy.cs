@@ -8,42 +8,53 @@ public class SpawnEnemy : MonoBehaviour
     public int[] waveAmount;
     public int i;
     public int waveNumber = 0;
-    public static int areThereEnemiesAlive;
+    public static int areThereEnemiesAlive = 0;
     // Start is called before the first frame update
     void Start()
     {
-        areThereEnemiesAlive = waveAmount[waveNumber];
+
     }
+
     IEnumerator EnemySpawnCooldown()
     {
+        //Waits for some time
         yield return new WaitForSecondsRealtime(5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        print(i);
-        //Spawns the enemy according to the amount speciefied in waveAmount with a half second interval
-        for(i = 0; i < waveAmount[waveNumber]; i++)
-        {
-            if(i == 0)
+
+        
+        //If there are no enemies alive
+        if (areThereEnemiesAlive == 0)
+        {      
+            //Spawns the enemy according to the amount speciefied in waveAmount
+            for (i = 0; i < waveAmount[waveNumber]; i++)
             {
-                areThereEnemiesAlive = waveAmount[waveNumber];
+                //Resets the amount of enemies allive to the new amount of enemies coming
+                if (i == 0)
+                {
+                    areThereEnemiesAlive = waveAmount[waveNumber];
+                }
+                //Spawns enemy after a cooldown
+                else
+                {
+                    EnemySpawnCooldown();
+                    SpawnsEnemy();
+                }
+
+
             }
-            SpawnsEnemy();
-            
-        }
-        if (waveAmount[waveNumber] == i && areThereEnemiesAlive == 0)
-        {
+            //Increses wavenumber value so that next wave will have more enemies and resets i's value
             waveNumber++;
             i = 0;
-            print("yupyup");
         }
     }
 
     public void SpawnsEnemy()
     {
-        EnemySpawnCooldown();
+        //Spawns enemy
         Instantiate(enemyPrefab);
     }
 }
