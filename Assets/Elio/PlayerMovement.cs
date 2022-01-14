@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //Scribt by Elio
     public CharacterController playerController;
     Vector3 playerVector;
     float gravity = -9.82f;

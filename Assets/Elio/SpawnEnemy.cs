@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
 {
+    //Script by Elio
     public GameObject enemyPrefab;
     public int[] waveAmount;
     public int i;
