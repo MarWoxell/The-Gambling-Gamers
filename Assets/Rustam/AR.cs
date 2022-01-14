@@ -9,6 +9,7 @@ public class AR : BaseWeapon
     // Start is called before the first frame update
     void Start()
     {
+
         Ammo = MagSize;
     }
 
@@ -22,10 +23,6 @@ public class AR : BaseWeapon
                 StartCoroutine(FirePause());
             }
         }
-    }
-    public override void Fire()
-    {
-        
     }
 
     IEnumerator FirePause()

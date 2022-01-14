@@ -219,7 +219,10 @@ GameObject:
   - component: {fileID: 71663985}
   - component: {fileID: 71663984}
   - component: {fileID: 71663988}
+  - component: {fileID: 71663991}
   - component: {fileID: 71663983}
+  - component: {fileID: 71663990}
+  - component: {fileID: 71663989}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -236,18 +239,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 71663982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd257e27ce299aa4a814f5283b35977f, type: 3}
+  m_Script: {fileID: 11500000, guid: fdb9d125d471a4b4aafd3a95ccd81a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
   ShootSound: {fileID: 0}
   audioSource: {fileID: 0}
-  Damage: 1
+  Damage: 5
   Range: 100
   Cam: {fileID: 34797958}
-  MagSize: 30
+  MagSize: 6
   Ammo: 0
   Reloadtime: 4
+  TrailStart: {fileID: 1012871424}
+  BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
+  Shellcount: 12
+  MaxDev: 30
 --- !u!65 &71663984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -322,6 +328,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 34797959}
+  - {fileID: 1012871424}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -342,6 +349,68 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &71663989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71663982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c2468228633e854a815f7c38285f0f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootSound: {fileID: 0}
+  audioSource: {fileID: 0}
+  Damage: 15
+  Range: 1000
+  Cam: {fileID: 0}
+  MagSize: 12
+  Ammo: 0
+  Reloadtime: 1
+  TrailStart: {fileID: 0}
+  BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
+--- !u!114 &71663990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71663982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd257e27ce299aa4a814f5283b35977f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootSound: {fileID: 0}
+  audioSource: {fileID: 0}
+  Damage: 5
+  Range: 1000
+  Cam: {fileID: 34797958}
+  MagSize: 30
+  Ammo: 0
+  Reloadtime: 2
+  TrailStart: {fileID: 0}
+  BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
+--- !u!114 &71663991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71663982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 665d6b733463ec24dbc25a6ecedd68d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pistol: {fileID: 71663989}
+  ak: {fileID: 71663990}
+  shotgun: {fileID: 71663983}
+  PistolTrue: 0
+  AkTrue: 0
+  ShotgunTrue: 0
 --- !u!1 &131953840
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +869,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1012871423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1012871424}
+  m_Layer: 0
+  m_Name: Trailstart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1012871424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012871423}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.43, y: -1.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 71663987}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1214780762
 GameObject:
   m_ObjectHideFlags: 0

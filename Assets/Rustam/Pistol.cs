@@ -7,6 +7,8 @@ public class Pistol : BaseWeapon
     // Start is called before the first frame update
     void Start()
     {
+
+
         Ammo = MagSize;
     }
 
