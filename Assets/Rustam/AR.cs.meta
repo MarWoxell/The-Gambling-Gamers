@@ -3,7 +3,12 @@ guid: dd257e27ce299aa4a814f5283b35977f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - ShootSound: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - Cam: {instanceID: 0}
+  - TrailStart: {instanceID: 0}
+  - BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
