@@ -224,3 +224,131 @@ Received Import Request.
 Start importing Assets/Oscar/3d objects/walls.mat using Guid(9bf32e785aeda9a43914116d6222b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97df0d4cea71db3d521bc9f573147a49') in 0.034291 seconds 
   Import took 0.041252 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 559.493233 seconds.
+  path: Assets/Oscar/3d objects/starter hub.mb
+  artifactKey: Guid(a8b2206dd8b22a1438386e1ba36dbfb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/starter hub.mb using Guid(a8b2206dd8b22a1438386e1ba36dbfb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f358708ff2fd89fbc5367fe315f9236') in 0.153068 seconds 
+  Import took 0.162039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 191.744317 seconds.
+  path: Assets/Oscar/3d objects/starter hub2.mb
+  artifactKey: Guid(afed5f7e92ae938449f03dca9f7f23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/starter hub2.mb using Guid(afed5f7e92ae938449f03dca9f7f23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99410197bf4e42bcad5b57fe84ce016a') in 0.103057 seconds 
+  Import took 0.110795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 185.095606 seconds.
+  path: Assets/Oscar/3d objects/Materials
+  artifactKey: Guid(64280bf455d31f04e9887f5bf3cfb402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/Materials using Guid(64280bf455d31f04e9887f5bf3cfb402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2070b60b454c1f570aee507f2cd3cc60') in 0.013337 seconds 
+  Import took 0.019825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.317018 seconds.
+  path: Assets/Oscar/3d objects/Materials/nedladdning (2) 1.mat
+  artifactKey: Guid(77166edfed805d544ad3dd031a64a6fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/Materials/nedladdning (2) 1.mat using Guid(77166edfed805d544ad3dd031a64a6fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e610d7cbe3d23e6ab0f6e19e360a311') in 0.037902 seconds 
+  Import took 0.043845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.190621 seconds.
+  path: Assets/Oscar/3d objects/starter hub2.mb
+  artifactKey: Guid(afed5f7e92ae938449f03dca9f7f23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/starter hub2.mb using Guid(afed5f7e92ae938449f03dca9f7f23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6db8c41a62229ac56d9fd508442febb') in 0.135951 seconds 
+  Import took 0.148561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.526989 seconds.
+  path: Assets/Oscar/3d objects/starter hub2.mb
+  artifactKey: Guid(afed5f7e92ae938449f03dca9f7f23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/starter hub2.mb using Guid(afed5f7e92ae938449f03dca9f7f23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '329b3ad337d674a973738aa57fba2cb5') in 0.087128 seconds 
+  Import took 0.095235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.793450 seconds.
+  path: Assets/Oscar/3d objects/starter hub2.mb
+  artifactKey: Guid(afed5f7e92ae938449f03dca9f7f23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/starter hub2.mb using Guid(afed5f7e92ae938449f03dca9f7f23c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b75d869f48260d87c75f412ae3a95fc') in 0.134289 seconds 
+  Import took 0.189741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.040909 seconds.
+  path: Assets/Oscar/C#
+  artifactKey: Guid(ff09dc1c42e356646bdfdf082fc211f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/C# using Guid(ff09dc1c42e356646bdfdf082fc211f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58950fee09b32385484895bc33bac9a3') in 0.025788 seconds 
+  Import took 0.038460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.076175 seconds.
+  path: Assets/Oscar/C#/hpsliderscript.cs
+  artifactKey: Guid(38debc101f728c24883c2db0e5cafe35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/C#/hpsliderscript.cs using Guid(38debc101f728c24883c2db0e5cafe35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe6fc52d3b803941524a4c2af9aec76') in 0.029643 seconds 
+  Import took 0.044568 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006697 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.355 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2356ms)
+		BeginReloadAssembly (240ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (1967ms)
+			LoadAssemblies (278ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (474ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (912ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (179ms)
+				ProcessInitializeOnLoadAttributes (577ms)
+				ProcessInitializeOnLoadMethodAttributes (131ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1981 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.2 MB.
+System memory in use after: 86.3 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 2458.
+Total: 11.634200 ms (FindLiveObjects: 0.364300 ms CreateObjectMapping: 0.158200 ms MarkObjects: 11.047500 ms  DeleteObjects: 0.062200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
