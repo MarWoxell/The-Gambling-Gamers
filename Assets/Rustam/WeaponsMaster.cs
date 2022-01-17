@@ -13,7 +13,7 @@ public class WeaponsMaster : MonoBehaviour
     void Start()
     { //Ser till att man börjar med smgn
 
-        AKActive();
+        PistolActive();
     }
 
     // Update is called once per frame
@@ -23,34 +23,34 @@ public class WeaponsMaster : MonoBehaviour
         {
             PistolActive();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) && ak.WeaponLVL > 0)
         {
             AKActive();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && shotgun.WeaponLVL > 0)
         {
             ShotgunActive();
         }
     }
    void PistolActive()
     {
-        pistol.enabled = true;
-        ak.enabled = false;
-        shotgun.enabled = false;
+        pistol.WeaponActive = true;
+        ak.WeaponActive = false;
+        shotgun.WeaponActive = false;
         print("1");
     }
     void AKActive()
     {
-        pistol.enabled = false;
-        ak.enabled = true;
-        shotgun.enabled = false;
+        pistol.WeaponActive = false;
+        ak.WeaponActive = true;
+        shotgun.WeaponActive = false;
         print("2");
     }
     void ShotgunActive()
     {
-            pistol.enabled = false;
-            ak.enabled = false;
-            shotgun.enabled = true;
+            pistol.WeaponActive = false;
+            ak.WeaponActive = false;
+            shotgun.WeaponActive = true;
             print("3");
     }
 }

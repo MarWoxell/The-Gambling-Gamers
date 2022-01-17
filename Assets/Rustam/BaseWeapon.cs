@@ -8,14 +8,18 @@ public class BaseWeapon : MonoBehaviour
     public AudioSource audioSource;
 
     public int Damage;
+    public int BaseDamage;
     public float Range = 1000;
     public Camera Cam;
     public int MagSize;
     public int Ammo;
     public float Reloadtime;
-
+    public int WeaponLVL = 0;
+    public bool WeaponActive;
     public Transform TrailStart;
     public TrailRenderer BulletTrail;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -73,5 +77,9 @@ public class BaseWeapon : MonoBehaviour
         }
         Trail.transform.position = Hit.point;
         Destroy(Trail.gameObject, Trail.time);
+    }
+    public virtual void DamageFormula()
+    {
+        Damage = BaseDamage + (5 * (WeaponLVL - 1 ));
     }
 }

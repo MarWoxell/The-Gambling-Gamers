@@ -15,15 +15,22 @@ public class Pistol : BaseWeapon
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if(WeaponLVL > 0 && WeaponActive == true)
         {
-            print("Firing");
-            Fire();
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                print("Firing");
+                Fire();
+            }
         }
-        
+        DamageFormula();
     }
     public override void Fire()
     {
         base.Fire();
+    }
+    public override void DamageFormula()
+    {
+        base.DamageFormula();
     }
 }

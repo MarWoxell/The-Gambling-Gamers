@@ -16,12 +16,15 @@ public class Shotgun : BaseWeapon
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (WeaponLVL > 0 && WeaponActive == true)
         {
-            print("Firing");
-            Fire();
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                print("Firing");
+                Fire();
+            }
         }
-
+        DamageFormula();
     }
     public override void Fire()
     {
@@ -48,14 +51,18 @@ public class Shotgun : BaseWeapon
                     {
                         enemy.TakeDamage(Damage);
                     }
-                    Ammo--;
+                    //Ammo--;
                 }
                 else
                 {
                     StartCoroutine(Reload());
                 }
             }
-        }   
-
+        }
+        Ammo--;
+    }
+    public override void DamageFormula()
+    {
+        Damage = BaseDamage + (2 * (WeaponLVL - 1));
     }
 }

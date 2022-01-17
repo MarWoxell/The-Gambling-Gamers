@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Gacha : MonoBehaviour, Interactable
 {
-    public GameObject[] Winnable;
+    public Object[] Winnable;
+    public Pistol pistol;
+    public AR ak;
+    public Shotgun shotgun;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +27,20 @@ public class Gacha : MonoBehaviour, Interactable
 
     void Gamble()
     {
-        int Result = Random.Range(1, Winnable.Length);
+        int Result = Random.Range(1, Winnable.Length + 1);
         print(Result);
+        if(Result == 1)
+        {
+            pistol.WeaponLVL++;
+        }
+        if (Result == 2)
+        {
+            ak.WeaponLVL++;
+        }
+        if (Result == 3)
+        {
+            shotgun.WeaponLVL++;
+        }
+
     }
 }

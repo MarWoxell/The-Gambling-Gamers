@@ -245,11 +245,14 @@ MonoBehaviour:
   ShootSound: {fileID: 0}
   audioSource: {fileID: 0}
   Damage: 5
+  BaseDamage: 7
   Range: 100
   Cam: {fileID: 34797958}
   MagSize: 6
   Ammo: 0
   Reloadtime: 4
+  WeaponLVL: 0
+  WeaponActive: 0
   TrailStart: {fileID: 1012871424}
   BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
   Shellcount: 12
@@ -364,12 +367,15 @@ MonoBehaviour:
   ShootSound: {fileID: 0}
   audioSource: {fileID: 0}
   Damage: 15
+  BaseDamage: 15
   Range: 1000
-  Cam: {fileID: 0}
+  Cam: {fileID: 34797958}
   MagSize: 12
   Ammo: 0
   Reloadtime: 1
-  TrailStart: {fileID: 0}
+  WeaponLVL: 1
+  WeaponActive: 0
+  TrailStart: {fileID: 1012871424}
   BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
 --- !u!114 &71663990
 MonoBehaviour:
@@ -386,12 +392,15 @@ MonoBehaviour:
   ShootSound: {fileID: 0}
   audioSource: {fileID: 0}
   Damage: 5
+  BaseDamage: 5
   Range: 1000
   Cam: {fileID: 34797958}
   MagSize: 30
   Ammo: 0
   Reloadtime: 2
-  TrailStart: {fileID: 0}
+  WeaponLVL: 0
+  WeaponActive: 0
+  TrailStart: {fileID: 1012871424}
   BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
 --- !u!114 &71663991
 MonoBehaviour:
@@ -408,9 +417,6 @@ MonoBehaviour:
   pistol: {fileID: 71663989}
   ak: {fileID: 71663990}
   shotgun: {fileID: 71663983}
-  PistolTrue: 0
-  AkTrue: 0
-  ShotgunTrue: 0
 --- !u!1 &131953840
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,10 +584,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Winnable:
-  - {fileID: 1735747882}
-  - {fileID: 71663982}
-  - {fileID: 542967274}
-  - {fileID: 367865555}
+  - {fileID: 11500000, guid: 7c2468228633e854a815f7c38285f0f2, type: 3}
+  - {fileID: 11500000, guid: dd257e27ce299aa4a814f5283b35977f, type: 3}
+  - {fileID: 11500000, guid: fdb9d125d471a4b4aafd3a95ccd81a34, type: 3}
+  pistol: {fileID: 71663989}
+  ak: {fileID: 71663990}
+  shotgun: {fileID: 71663983}
 --- !u!136 &367865557
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -653,7 +661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367865555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.75, y: 0, z: -6.14}
+  m_LocalPosition: {x: 1.19, y: 0, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1203,7 +1211,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -200, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 260.5, y: 69.9}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2098280935
 MonoBehaviour:

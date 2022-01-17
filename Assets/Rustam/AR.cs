@@ -6,6 +6,8 @@ public class AR : BaseWeapon
 {
 
     private bool StopShoot = false;
+    public float FireRateDivider;
+    private float ActualFireRate;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +18,17 @@ public class AR : BaseWeapon
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (WeaponLVL > 0 && WeaponActive == true)
         {
-            if (StopShoot == false)
+            if (Input.GetKey(KeyCode.Mouse0))
             {
-                StartCoroutine(FirePause());
+                if (StopShoot == false)
+                {
+                    StartCoroutine(FirePause());
+                }
             }
         }
+        DamageFormula();
     }
 
     IEnumerator FirePause()
@@ -32,7 +38,12 @@ public class AR : BaseWeapon
         yield return null;
         base.Fire();
         //0.25 Sekunder senare slutar cooldownen
-        yield return new WaitForSeconds(0.33f);
+        yield return new WaitForSeconds(ActualFireRate);
         StopShoot = false;
+    }
+    public override void DamageFormula()
+    {
+        Damage = BaseDamage + (2 * (WeaponLVL - 1));
+        ActualFireRate = 1 / (4 + (WeaponLVL - 1));
     }
 }
