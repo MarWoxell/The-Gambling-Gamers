@@ -424,3 +424,131 @@ Received Import Request.
 Start importing Assets/Oscar/3d objects/slotmachine.mb using Guid(07a8deae1cf860845b38c0cd635af799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7386a4071fc54cdb43e9d1f726e2b140') in 0.681805 seconds 
   Import took 0.750511 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007893 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.069 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3073ms)
+		BeginReloadAssembly (451ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (22ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (156ms)
+		EndReloadAssembly (2465ms)
+			LoadAssemblies (429ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (831ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (107ms)
+			SetupLoadedEditorAssemblies (881ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (213ms)
+				ProcessInitializeOnLoadAttributes (505ms)
+				ProcessInitializeOnLoadMethodAttributes (122ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1981 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.3 MB.
+System memory in use after: 86.4 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 2463.
+Total: 11.270800 ms (FindLiveObjects: 0.412500 ms CreateObjectMapping: 0.087800 ms MarkObjects: 10.674000 ms  DeleteObjects: 0.094200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2769.736942 seconds.
+  path: Assets/Oscar/3d objects/playerhpSlider.prefab
+  artifactKey: Guid(b9bd8cba90fdd7246a232a5849cbb726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/playerhpSlider.prefab using Guid(b9bd8cba90fdd7246a232a5849cbb726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1002b573081b3db1fc8ed76e5ab8747d') in 0.202685 seconds 
+  Import took 0.210669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.091069 seconds.
+  path: Assets/Oscar/3d objects/Fixed_health_bar.png
+  artifactKey: Guid(3c7e931c20b570a4bbbc8e74d35a4176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/Fixed_health_bar.png using Guid(3c7e931c20b570a4bbbc8e74d35a4176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e59b3c121eb3cd59a43cec3de59a434') in 0.098933 seconds 
+  Import took 0.107310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Oscar/3d objects/HP_bar_protag (1).png
+  artifactKey: Guid(4778ffa245cda8e4383d77af4118a14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/HP_bar_protag (1).png using Guid(4778ffa245cda8e4383d77af4118a14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf2bf86da01ede4eb2c6daac6eb786b') in 0.039824 seconds 
+  Import took 0.048586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Oscar/3d objects/New Piskel (7).png
+  artifactKey: Guid(8415bed1fa0ad214995534a009fdc3d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/New Piskel (7).png using Guid(8415bed1fa0ad214995534a009fdc3d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2de45e9b375e3ec33ec80be38fb3bb4') in 0.024240 seconds 
+  Import took 0.031284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Oscar/3d objects/HP_bar_protag.png
+  artifactKey: Guid(a2e0a708d98fafd4a88ed483d50f74fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/HP_bar_protag.png using Guid(a2e0a708d98fafd4a88ed483d50f74fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a887b706191ea1fb5a4be9aab2780ca9') in 0.026688 seconds 
+  Import took 0.036546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.188974 seconds.
+  path: Assets/Oscar/3d objects/Fixed_health_bar.png
+  artifactKey: Guid(3c7e931c20b570a4bbbc8e74d35a4176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/Fixed_health_bar.png using Guid(3c7e931c20b570a4bbbc8e74d35a4176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f43825c16ee361669773a81fa186aff') in 0.065380 seconds 
+  Import took 0.073844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/Oscar/3d objects/HP_bar_protag (1).png
+  artifactKey: Guid(4778ffa245cda8e4383d77af4118a14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/HP_bar_protag (1).png using Guid(4778ffa245cda8e4383d77af4118a14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8e6ed70b2b55064f6ca165807b5957') in 0.081781 seconds 
+  Import took 0.088470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Oscar/3d objects/HP_bar_protag.png
+  artifactKey: Guid(a2e0a708d98fafd4a88ed483d50f74fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/HP_bar_protag.png using Guid(a2e0a708d98fafd4a88ed483d50f74fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b953225e8f76aff65ff54c7770bdd6') in 0.038521 seconds 
+  Import took 0.044755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.581761 seconds.
+  path: Assets/Oscar/3d objects/New Piskel (7).png
+  artifactKey: Guid(8415bed1fa0ad214995534a009fdc3d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oscar/3d objects/New Piskel (7).png using Guid(8415bed1fa0ad214995534a009fdc3d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a6847be0fabcbe25466aa362c0b9e7c') in 0.024046 seconds 
+  Import took 0.029966 seconds .
+
