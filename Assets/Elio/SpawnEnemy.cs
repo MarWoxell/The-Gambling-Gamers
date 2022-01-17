@@ -6,8 +6,10 @@ public class SpawnEnemy : MonoBehaviour
 {
     //Script by Elio
     public GameObject enemyPrefab;
+    public Transform[] spawnPoints;
     public int[] waveAmount;
     public int i;
+    public int spawnPosition;
     public int waveNumber = 0;
     public static int areThereEnemiesAlive = 0;
     // Start is called before the first frame update
@@ -25,8 +27,6 @@ public class SpawnEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        
         //If there are no enemies alive
         if (areThereEnemiesAlive == 0)
         {      
@@ -55,7 +55,9 @@ public class SpawnEnemy : MonoBehaviour
 
     public void SpawnsEnemy()
     {
+
+        spawnPosition = Random.Range(0, 6);
         //Spawns enemy
-        Instantiate(enemyPrefab);
+        Instantiate(enemyPrefab, spawnPoints[spawnPosition].position, spawnPoints[spawnPosition].rotation);
     }
 }

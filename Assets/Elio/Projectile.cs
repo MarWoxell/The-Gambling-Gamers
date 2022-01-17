@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    private Vector3 playerPosition;
+    //Script by Elio
     public GameObject player;
+    public HealthBar healthBar;
     public float projectileSpeed;
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "Player")
+        {
+            Player.playerHealth -= 10;
+            healthBar.ChangeHealth(Player.playerHealth);
+            Destroy(gameObject);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

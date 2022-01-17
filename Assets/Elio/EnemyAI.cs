@@ -11,11 +11,10 @@ public class EnemyAI : MonoBehaviour
     private Transform enemyTransform;
     public GameObject enemy;
     public GameObject projectilePrefab;
+    public GameObject bullet;
     float distance;
     private bool hasAttacked;
     private bool noDoubles = true;
-    private float cooldown;
-    private float nextAttack;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +30,7 @@ public class EnemyAI : MonoBehaviour
     }
     IEnumerator Attack()
     {
-        print("aofieajoief");
-        Instantiate(projectilePrefab, enemyTransform.position, enemyTransform.rotation);
+        bullet = Instantiate(projectilePrefab, enemyTransform.position, enemyTransform.rotation);
         hasAttacked = true;
         yield return new WaitForSecondsRealtime(5);
         //Destroy(attack);
@@ -55,11 +53,9 @@ public class EnemyAI : MonoBehaviour
         if(distance <= 20 && hasAttacked == false)
         {
             StartCoroutine(Attack());
-            print("Poop");
         }
         if(hasAttacked == true && noDoubles == true)
         {
-            print("Shit");
             //nextAttack = Time.deltaTime + cooldown;
             StartCoroutine(EnemyShootCooldown());
         }
