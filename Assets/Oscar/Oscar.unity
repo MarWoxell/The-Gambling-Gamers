@@ -535,11 +535,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_RootOrder
@@ -547,19 +547,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_SizeDelta.x
@@ -599,11 +599,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -746,11 +746,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   fill: {fileID: 2076182784}
-  oldscoretext: {fileID: 0}
   deadoverlay: {fileID: 0}
-  tranformscore: {fileID: 0}
-  HitParticleEffect: {fileID: 0}
-  HitParticleColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2116503289
 PrefabInstance:
   m_ObjectHideFlags: 0

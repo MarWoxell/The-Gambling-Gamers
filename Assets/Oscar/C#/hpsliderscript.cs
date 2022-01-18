@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+//oscar
 public class hpsliderscript : MonoBehaviour
 {// varibalar för skelva slidern och sedan för death overlyn
     public int playerhp;
@@ -13,18 +13,13 @@ public class hpsliderscript : MonoBehaviour
 
     public Gradient gradient;
     public Image fill;
-    public GameObject oldscoretext;
 
     public GameObject deadoverlay;
-    public GameObject tranformscore;
 
-    public GameObject HitParticleEffect;
-    public Color HitParticleColor;
 
    
     private void Start()
-    {// i starten så så kallar jag på scriptensen soundplayer och screnshake sedan så steter jag death overlyn till false och till sistet så stäer jag max hp til 100
-      
+    { 
         playerhp = 100;
         SetMaxHealth(playerhp);
         deadoverlay.SetActive(false);
@@ -50,11 +45,13 @@ public class hpsliderscript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            heal(100);
+          //  heal(100);
         }
          if (playerhp <= 0)
         {
-          
+            deadoverlay.SetActive(true);
+            //ScoreText.text = "Score: " + GetComponent<timeskriptet>().score;
+
 
         }
     }
@@ -76,12 +73,16 @@ public class hpsliderscript : MonoBehaviour
     public void relodscen()
     {// när du dör så fins det en knap för när man vil kör om 
 
-        
+
+        SceneManager.LoadScene(0);
+
     }
     public void menu()
     {// går till back atill menu
 
-       
+
+        SceneManager.LoadScene(0);
+
     }
 
 }
