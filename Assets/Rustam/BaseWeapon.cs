@@ -44,7 +44,7 @@ public class BaseWeapon : MonoBehaviour
                 TrailRenderer Trail = Instantiate(BulletTrail, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
                 StartCoroutine(SpawnTrail(Trail, hit));
 
-                Enemy enemy = hit.transform.GetComponent<Enemy>();
+                EnemyAI enemy = hit.transform.GetComponent<EnemyAI>();
                 if (enemy != null)
                 {
                     enemy.TakeDamage(Damage);

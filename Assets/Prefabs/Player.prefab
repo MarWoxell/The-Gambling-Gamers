@@ -227,13 +227,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShootSound: {fileID: 0}
   audioSource: {fileID: 0}
-  Damage: 30
-  BaseDamage: 34
+  Damage: 10
+  BaseDamage: 10
   Range: 1000
   Cam: {fileID: 7129518058399190253}
-  MagSize: 100
+  MagSize: 30
   Ammo: 150
-  Reloadtime: 2
+  Reloadtime: 3
   WeaponLVL: 1
   WeaponActive: 0
   TrailStart: {fileID: 5865562402359371792}
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShootSound: {fileID: 0}
   audioSource: {fileID: 0}
-  Damage: 75
-  BaseDamage: 75
+  Damage: 50
+  BaseDamage: 50
   Range: 1000
   Cam: {fileID: 7129518058399190253}
   MagSize: 100

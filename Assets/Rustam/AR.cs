@@ -6,7 +6,6 @@ public class AR : BaseWeapon
 {
 
     private bool StopShoot = false;
-    public float FireRateDivider;
     private float ActualFireRate;
     // Start is called before the first frame update
     void Start()
@@ -38,12 +37,12 @@ public class AR : BaseWeapon
         yield return null;
         base.Fire();
         //0.25 Sekunder senare slutar cooldownen
-        yield return new WaitForSeconds(ActualFireRate);
+        yield return new WaitForSeconds(0.15f);
         StopShoot = false;
     }
     public override void DamageFormula()
     {
         Damage = BaseDamage + (2 * (WeaponLVL - 1));
-        ActualFireRate = 1 / (4 + (WeaponLVL - 1));
+        MagSize = 30 + 5 * (WeaponLVL - 1 );
     }
 }
