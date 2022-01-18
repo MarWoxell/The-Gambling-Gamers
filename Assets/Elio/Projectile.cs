@@ -13,8 +13,8 @@ public class Projectile : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            Player.playerHealth -= 10;
-            healthBar.ChangeHealth(Player.playerHealth);
+            /*Player.playerHealth -= 10;
+            healthBar.ChangeHealth(Player.playerHealth);*/
             Destroy(gameObject);
         }
     }

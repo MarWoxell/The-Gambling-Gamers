@@ -56,7 +56,7 @@ public class SpawnEnemy : MonoBehaviour
     public void SpawnsEnemy()
     {
 
-        spawnPosition = Random.Range(0, 6);
+        spawnPosition = Random.Range(0, 8);
         //Spawns enemy
         Instantiate(enemyPrefab, spawnPoints[spawnPosition].position, spawnPoints[spawnPosition].rotation);
     }
