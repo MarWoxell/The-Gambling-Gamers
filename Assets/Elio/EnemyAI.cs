@@ -11,7 +11,6 @@ public class EnemyAI : MonoBehaviour
     private Transform enemyTransform;
     public GameObject enemy;
     public GameObject projectilePrefab;
-    public GameObject bullet;
     float distance;
     private bool hasAttacked;
     private bool noDoubles = true;
@@ -30,7 +29,7 @@ public class EnemyAI : MonoBehaviour
     }
     IEnumerator Attack()
     {
-        bullet = Instantiate(projectilePrefab, enemyTransform.position, enemyTransform.rotation);
+        Instantiate(projectilePrefab, enemyTransform.position, enemyTransform.rotation);
         hasAttacked = true;
         yield return new WaitForSecondsRealtime(5);
         //Destroy(attack);

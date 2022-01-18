@@ -27,11 +27,12 @@ public class SpawnEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print(areThereEnemiesAlive);
         //If there are no enemies alive
         if (areThereEnemiesAlive == 0)
         {      
             //Spawns the enemy according to the amount speciefied in waveAmount
-            for (i = 0; i < waveAmount[waveNumber]; i++)
+            for (i = 0; i <= waveAmount[waveNumber]; i++)
             {
                 //Resets the amount of enemies allive to the new amount of enemies coming
                 if (i == 0)

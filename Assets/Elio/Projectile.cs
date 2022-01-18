@@ -15,15 +15,18 @@ public class Projectile : MonoBehaviour
         {
             /*Player.playerHealth -= 10;
             healthBar.ChangeHealth(Player.playerHealth);*/
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 5);
+        Destroy(this.gameObject, 5);
     }
-
+    public void DestroyProjectile()
+    {
+        Destroy(this.gameObject);
+    }
     // Update is called once per frame
     void Update()
     {

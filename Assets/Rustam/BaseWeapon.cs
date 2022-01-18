@@ -49,6 +49,12 @@ public class BaseWeapon : MonoBehaviour
                 {
                     enemy.TakeDamage(Damage);
                 }
+
+                Projectile projectile = hit.transform.GetComponent<Projectile>();
+                if (projectile != null)
+                {
+                    projectile.DestroyProjectile();
+                }
                 Ammo--;
             }
               else
