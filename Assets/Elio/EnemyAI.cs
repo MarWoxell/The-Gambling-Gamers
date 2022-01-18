@@ -11,9 +11,11 @@ public class EnemyAI : MonoBehaviour
     private Transform enemyTransform;
     public GameObject enemy;
     public GameObject projectilePrefab;
+    public GameObject moneyPrefab;
     float distance;
     private bool hasAttacked;
     private bool noDoubles = true;
+    public int health = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,11 @@ public class EnemyAI : MonoBehaviour
         yield return new WaitForSecondsRealtime(5);
         //Destroy(attack);
     }
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -59,7 +66,12 @@ public class EnemyAI : MonoBehaviour
             StartCoroutine(EnemyShootCooldown());
         }
 
-
+        if (health <= 0)
+        {
+            Instantiate(moneyPrefab, enemyTransform.position, enemyTransform.rotation);
+            SpawnEnemy.areThereEnemiesAlive--;
+            Destroy(this.gameObject);
+        }
     }
     private void ChasePlayer()
     {

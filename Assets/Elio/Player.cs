@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public static int playerHealth;
+    public static int money;
     public int maxHealth = 100;
     public HealthBar healthBar;
     // Start is called before the first frame update
