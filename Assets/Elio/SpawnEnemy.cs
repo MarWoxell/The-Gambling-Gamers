@@ -27,7 +27,6 @@ public class SpawnEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(areThereEnemiesAlive);
         //If there are no enemies alive
         if (areThereEnemiesAlive == 0)
         {      

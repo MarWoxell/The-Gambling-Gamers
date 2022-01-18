@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print(money);
         if (playerHealth <= 0)
         {
             print("Dead");
