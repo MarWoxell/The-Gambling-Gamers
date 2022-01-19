@@ -42,7 +42,7 @@ public class Shotgun : BaseWeapon
             {
                 if (Ammo > 0)
                 {
-                    print(hit.transform.name);
+                    audioSource.PlayOneShot(ReloadSound);
                     TrailRenderer Trail = Instantiate(BulletTrail, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
                     StartCoroutine(SpawnTrail(Trail, hit));
 

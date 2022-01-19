@@ -248,11 +248,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7129518057773384007, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.48
+      value: -4.8
       objectReference: {fileID: 0}
     - target: {fileID: 7129518057773384007, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.8947604
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: 7129518057773384007, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -685,6 +685,8 @@ MonoBehaviour:
   pistol: {fileID: 0}
   ak: {fileID: 0}
   shotgun: {fileID: 0}
+  PlayerAudio: {fileID: 0}
+  GamblingSound: {fileID: 0}
 --- !u!65 &2042906260
 BoxCollider:
   m_ObjectHideFlags: 0

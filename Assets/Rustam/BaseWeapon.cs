@@ -5,6 +5,7 @@ using UnityEngine;
 public class BaseWeapon : MonoBehaviour
 {
     public AudioClip ShootSound;
+    public AudioClip ReloadSound;
     public AudioSource audioSource;
 
     public int Damage;
@@ -39,7 +40,7 @@ public class BaseWeapon : MonoBehaviour
           {
           if(Ammo > 0)
             {
-                print(hit.transform.name);
+                audioSource.PlayOneShot(ShootSound);
 
                 TrailRenderer Trail = Instantiate(BulletTrail, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
                 StartCoroutine(SpawnTrail(Trail, hit));
@@ -66,6 +67,7 @@ public class BaseWeapon : MonoBehaviour
     public IEnumerator Reload()
     {
         yield return null;
+        audioSource.PlayOneShot(ReloadSound);
         yield return new WaitForSeconds(Reloadtime);
         Ammo = MagSize;
     }

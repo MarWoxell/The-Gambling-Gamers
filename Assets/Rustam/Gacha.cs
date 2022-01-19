@@ -9,6 +9,9 @@ public class Gacha : MonoBehaviour, Interactable
     public AR ak;
     public Shotgun shotgun;
 
+    public AudioSource PlayerAudio;
+    public AudioClip GamblingSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,7 @@ public class Gacha : MonoBehaviour, Interactable
 
     void Gamble()
     {
+        PlayerAudio.PlayOneShot(GamblingSound);
         int Result = Random.Range(1, Winnable.Length + 1);
         print(Result);
         if(Result == 1)
