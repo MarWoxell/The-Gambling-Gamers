@@ -48,8 +48,15 @@ public class TimeSave : MonoBehaviour
     // Resetar tiden i menyn
     public void resetTime()
     {
+        GetComponent<Pistol>().WeaponLVL = 1;
+        GetComponent<Shotgun>().WeaponLVL = 0;
+        GetComponent<AR>().WeaponLVL = 0;
+        GetComponent<Player>().moneyAmount = 0;
+
         time = 0;
         PlayerPrefs.SetFloat("time", 0);
         bestScore.text = "Your Best Time " + time;
+
+        GetComponent<SaveManager>().SaveGame();
     }
 }
