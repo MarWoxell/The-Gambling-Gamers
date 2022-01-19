@@ -51,6 +51,7 @@ GameObject:
   - component: {fileID: 6375910999618965496}
   - component: {fileID: 394077923090774711}
   - component: {fileID: 9048265360340734370}
+  - component: {fileID: 2825051525071476006}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -238,7 +239,6 @@ MonoBehaviour:
   WeaponActive: 0
   TrailStart: {fileID: 5865562402359371792}
   BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
-  FireRateDivider: 3
 --- !u!114 &6375910999618965496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +306,23 @@ MonoBehaviour:
   pistol: {fileID: 6375910999618965496}
   ak: {fileID: 3583718296038312401}
   shotgun: {fileID: 394077923090774711}
+--- !u!114 &2825051525071476006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7129518057773384061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04b7c18f72d6b104e8241d87a89a321d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prompt: {fileID: 0}
+  EnterText: {fileID: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &7129518058399190255
 GameObject:
   m_ObjectHideFlags: 0
