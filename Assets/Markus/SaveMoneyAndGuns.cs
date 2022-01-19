@@ -12,7 +12,7 @@ public class SaveMoneyAndGuns
     public int shotgun;
     public float time;
 
-    public SaveMoneyAndGuns (TimeSave timeSave, AR aR, Shotgun sg, Pistol handgun, Money cash)
+    public SaveMoneyAndGuns (TimeSave timeSave, AR aR, Shotgun sg, Pistol handgun, Player cash)
     {
         time = timeSave.time;
         arLV = aR.WeaponLVL;

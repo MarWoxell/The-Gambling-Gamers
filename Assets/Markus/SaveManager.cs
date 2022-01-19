@@ -11,7 +11,7 @@ public class SaveManager : MonoBehaviour
     public AR ar;
     public Shotgun sg;
     public Pistol handgun;
-    public Money cash;
+    public Player cash;
     public void SaveGame()
     {
         BinaryFormatter bf = new BinaryFormatter();
