@@ -18,8 +18,6 @@ public class SaveManager : MonoBehaviour
         FileStream file = File.Create(Application.persistentDataPath + "/SaveData");
         SaveMoneyAndGuns saveMoneyAndGuns = new SaveMoneyAndGuns(time, ar, sg, handgun, cash);
         
-
-
         bf.Serialize(file, saveMoneyAndGuns);
         file.Close();
         print("Game is saved!");

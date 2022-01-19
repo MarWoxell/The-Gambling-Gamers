@@ -17,8 +17,6 @@ public static class SaveData
 
         FileStream file = File.Create(path);
 
-
-
         file.Close();
     }
 

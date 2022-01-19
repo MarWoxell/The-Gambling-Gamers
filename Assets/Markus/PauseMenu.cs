@@ -8,12 +8,15 @@ public class PauseMenu : MonoBehaviour
 {
     bool paused = false;
     public GameObject pauseMenu;
+    
 
     private void Start()
     {
+        GetComponent<SaveManager>().LoadGame();
         paused = false;
         pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1;
     }
     private void Update()
     {
@@ -46,13 +49,20 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
     }
+    public void game()
+    {
+        GetComponent<SaveManager>().SaveGame();
+        SceneManager.LoadScene("ee");
+    }
 
     public void Gacha()
     {
+        GetComponent<SaveManager>().SaveGame();
         SceneManager.LoadScene("Oscar");
     }
     public void Quit()
     {
+        GetComponent<SaveManager>().SaveGame();
         SceneManager.LoadScene("Markus");
     }
 
