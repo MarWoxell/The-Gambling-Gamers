@@ -6,6 +6,7 @@ TagManager:
   tags:
   - AttackSphere
   - Projectile
+  - Money
   layers:
   - Default
   - TransparentFX

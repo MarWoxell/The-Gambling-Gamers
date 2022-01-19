@@ -8,12 +8,24 @@ public class Player : MonoBehaviour
     public static int playerHealth;
     public static int money;
     public int maxHealth = 100;
-    public HealthBar healthBar;
+    public int moneyAmount;
+    public HealthBar healthBar; 
+    public AudioSource PlayerAudio;
+    public AudioClip PickupSound;
     // Start is called before the first frame update
     void Start()
     {
         playerHealth = maxHealth;
         healthBar.setMaxHealth(maxHealth);
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Money")
+        {
+            money += moneyAmount;
+            PlayerAudio.PlayOneShot(PickupSound);
+            Destroy(other.gameObject);
+        }
     }
     /*public void OnCollisionEnter(Collision collision)
     {

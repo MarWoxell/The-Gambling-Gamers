@@ -213,7 +213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  moneyAmount: 100
   healthBar: {fileID: 0}
+  PlayerAudio: {fileID: 0}
+  PickupSound: {fileID: 0}
 --- !u!114 &3583718296038312401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,6 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShootSound: {fileID: 0}
+  ReloadSound: {fileID: 0}
   audioSource: {fileID: 0}
   Damage: 10
   BaseDamage: 10
@@ -252,6 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShootSound: {fileID: 0}
+  ReloadSound: {fileID: 0}
   audioSource: {fileID: 0}
   Damage: 50
   BaseDamage: 50
@@ -277,6 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShootSound: {fileID: 0}
+  ReloadSound: {fileID: 0}
   audioSource: {fileID: 0}
   Damage: 50
   BaseDamage: 50
