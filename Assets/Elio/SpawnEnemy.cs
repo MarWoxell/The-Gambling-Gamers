@@ -9,13 +9,14 @@ public class SpawnEnemy : MonoBehaviour
     public Transform[] spawnPoints;
     public int[] waveAmount;
     public int i;
+    public int z;
     public int spawnPosition;
     public int waveNumber = 0;
     public static int areThereEnemiesAlive = 0;
     // Start is called before the first frame update
     void Start()
     {
-
+        waveAmount[0] = 10;
     }
 
     IEnumerator EnemySpawnCooldown()
@@ -29,7 +30,9 @@ public class SpawnEnemy : MonoBehaviour
     {
         //If there are no enemies alive
         if (areThereEnemiesAlive == 0)
-        {      
+        {
+            waveAmount[waveNumber] = waveAmount[waveNumber - 1] * 2;
+
             //Spawns the enemy according to the amount speciefied in waveAmount
             for (i = 0; i <= waveAmount[waveNumber]; i++)
             {
