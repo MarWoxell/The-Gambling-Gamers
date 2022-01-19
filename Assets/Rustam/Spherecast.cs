@@ -23,9 +23,9 @@ public class Spherecast : MonoBehaviour
         EnterText.text = EnterString;
         RaycastHit hit;
 
-        if (Physics.CheckSphere(transform.position, 2, mask))
+        if (Physics.CheckSphere(transform.position, 3, mask))
         {
-            foreach (Collider Col in Physics.OverlapSphere(transform.position, 2, mask))
+            foreach (Collider Col in Physics.OverlapSphere(transform.position, 3, mask))
             {
                 //Checkar för objekt inom en sfär runt spelaren
                 Transform cols = Col.transform;
@@ -55,7 +55,7 @@ public class Spherecast : MonoBehaviour
     {
         Gizmos.color = Color.blue;
         //Gizmos.DrawWireSphere(SpherePos.position, 2);
-        Gizmos.DrawWireSphere(transform.position, 2);
+        Gizmos.DrawWireSphere(transform.position, 3);
         //Ritar en cirkel kring spelar i editorn för debugging
     }
 }
