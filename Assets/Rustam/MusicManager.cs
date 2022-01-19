@@ -8,13 +8,11 @@ public class MusicManager : MonoBehaviour
 
 
     public AudioSource PlayerSource;
-    public AudioClip HubTheme;
-    public AudioClip ArenaTheme;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerSource.Play();
     }
 
     // Update is called once per frame

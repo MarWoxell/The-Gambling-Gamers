@@ -6,7 +6,7 @@ using TMPro;
 //Detta skript var skrivet av Rustam
 public class Spherecast : MonoBehaviour
 {
-    public RawImage Prompt;
+    //public RawImage Prompt;
     public TextMeshProUGUI EnterText;
     private string EnterString;
     [SerializeField]
@@ -33,7 +33,7 @@ public class Spherecast : MonoBehaviour
                 {
                     //Om objektet haren interface så displayas ui elementet och namnet
                     EnterString = cols.name;
-                    Prompt.enabled = true;
+                    //Prompt.enabled = true;
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
@@ -47,7 +47,7 @@ public class Spherecast : MonoBehaviour
         else
         {
             EnterString = "";
-            Prompt.enabled = false;
+            //Prompt.enabled = false;
             //Om det inte finns några interactible objekt så displayas inte ui element
         }
     }
