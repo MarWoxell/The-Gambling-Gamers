@@ -13,6 +13,7 @@ public class MusicManager : MonoBehaviour
     void Start()
     {
         PlayerSource.Play();
+        PlayerSource.loop = true;
     }
 
     // Update is called once per frame
