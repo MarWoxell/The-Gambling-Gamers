@@ -46,6 +46,11 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+    public void Gacha()
+    {
+        SceneManager.LoadScene("Oscar");
+    }
     public void Quit()
     {
         SceneManager.LoadScene("Markus");

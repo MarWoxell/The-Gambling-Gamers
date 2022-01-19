@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Markus/Markus2.unity
     guid: eb5a8449c737a4c41b898de3167bce34
+  - enabled: 1
+    path: Assets/Oscar/Oscar.unity
+    guid: d0df2b3a04d5ddb459bf5fea1e9224cc
+  - enabled: 1
+    path: Assets/Oscar/ee.unity
+    guid: 6cf57ed8f03d6d04197595c1cad995ed
   m_configObjects: {}
