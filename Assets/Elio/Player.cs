@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public int realMoney;
     public int maxHealth = 100;
     public int moneyAmount;
+    public int damage = 10;
     
     public hpsliderscript healthBar; 
     public AudioSource PlayerAudio;
@@ -33,8 +34,8 @@ public class Player : MonoBehaviour
     {
         if (collision.collider.tag == "Projectile")
         {
-            Player.playerHealth -= 10;
-            healthBar.takedamage(playerHealth);
+            playerHealth -= damage;
+            healthBar.takedamage(damage);
             print("HealthChange");
         }
     }
@@ -46,9 +47,15 @@ public class Player : MonoBehaviour
         print(money);
         if (playerHealth <= 0)
         {
+            hpsliderscript.isDead = true;
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
             healthBar.deadoverlay.SetActive(true);
-            print("Dead");
             //SceneManager.LoadScene();
+        }
+        else
+        {
+            hpsliderscript.isDead = false;  
         }
 
     }

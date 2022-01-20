@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class hpsliderscript : MonoBehaviour
 {// varibalar för skelva slidern och sedan för death overlyn
     public int playerhp;
+    public static bool isDead;
 
     public Text ScoreText;
     public Slider slider;
@@ -20,6 +21,7 @@ public class hpsliderscript : MonoBehaviour
    
     private void Start()
     { 
+        
         playerhp = 100;
         SetMaxHealth(playerhp);
         deadoverlay.SetActive(false);
@@ -49,7 +51,10 @@ public class hpsliderscript : MonoBehaviour
         }
          if (playerhp <= 0)
         {
-            deadoverlay.SetActive(true);
+            isDead = true;
+            Time.timeScale = 0;
+            deadoverlay.SetActive(true); 
+            Cursor.lockState = CursorLockMode.None;
             //ScoreText.text = "Score: " + GetComponent<timeskriptet>().score;
 
 
