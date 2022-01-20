@@ -9,14 +9,14 @@ public class Player : MonoBehaviour
     public static int money;
     public int maxHealth = 100;
     public int moneyAmount;
-    public HealthBar healthBar; 
+    public hpsliderscript healthBar; 
     public AudioSource PlayerAudio;
     public AudioClip PickupSound;
     // Start is called before the first frame update
     void Start()
     {
         playerHealth = maxHealth;
-        healthBar.setMaxHealth(maxHealth);
+        healthBar.SetMaxHealth(maxHealth);
     }
     public void OnTriggerEnter(Collider other)
     {
@@ -27,15 +27,15 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
-    /*public void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == "Projectile")
         {
             Player.playerHealth -= 10;
-            healthBar.ChangeHealth(playerHealth);
+            healthBar.takedamage(playerHealth);
             print("HealthChange");
         }
-    }*/
+    }
 
     // Update is called once per frame
     void Update()

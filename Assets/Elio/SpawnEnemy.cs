@@ -17,6 +17,7 @@ public class SpawnEnemy : MonoBehaviour
     void Start()
     {
         waveAmount[0] = 10;
+        waveNumber++;
     }
 
     IEnumerator EnemySpawnCooldown()
