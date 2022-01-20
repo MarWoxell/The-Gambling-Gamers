@@ -16,7 +16,7 @@ public class SpawnEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waveAmount[0] = 10;
+        waveAmount[0] = 1;
         waveNumber++;
     }
 

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CameraControll : MonoBehaviour
 {
     //Script by Elio
@@ -20,12 +20,15 @@ public class CameraControll : MonoBehaviour
     {
         //gives mouseX and mouseY a value that will be used for the camera movement
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime; //Left and right
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime; //Up and down
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Oscar"))
+        {
+            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime; //Up and down
+            xRotation -= mouseY;
+        }
 
         //Moves the camera on the x and y position
         transform.Rotate(Vector3.up * mouseX);
         cameraTransform.localRotation = Quaternion.Euler(xRotation, 0, 0f);
-        xRotation -= mouseY;
         //Makes it so that uou can't look up or down over 90 degrees
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
     }
