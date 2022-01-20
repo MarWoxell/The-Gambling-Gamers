@@ -45,7 +45,7 @@ public class hpsliderscript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-          //  heal(100);
+          //v  heal(100);
         }
          if (playerhp <= 0)
         {
@@ -74,7 +74,7 @@ public class hpsliderscript : MonoBehaviour
     {// när du dör så fins det en knap för när man vil kör om 
 
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
 
     }
     public void menu()
