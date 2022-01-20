@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 500
-  cameraTransform: {fileID: 0}
+  cameraTransform: {fileID: 5117369932487411746}
 --- !u!54 &1300844094
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -319,7 +319,7 @@ MonoBehaviour:
   Damage: 10
   BaseDamage: 10
   Range: 1000
-  Cam: {fileID: 0}
+  Cam: {fileID: 1953751863887164496}
   MagSize: 30
   Ammo: 150
   Reloadtime: 3
@@ -348,7 +348,7 @@ MonoBehaviour:
   Damage: 50
   BaseDamage: 50
   Range: 1000
-  Cam: {fileID: 0}
+  Cam: {fileID: 1953751863887164496}
   MagSize: 100
   Ammo: 100
   Reloadtime: 1
@@ -377,7 +377,7 @@ MonoBehaviour:
   Damage: 50
   BaseDamage: 50
   Range: 1000
-  Cam: {fileID: 0}
+  Cam: {fileID: 1953751863887164496}
   MagSize: 4
   Ammo: 100
   Reloadtime: 2
