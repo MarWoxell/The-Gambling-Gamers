@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AR : BaseWeapon
 {
-
     private bool StopShoot = false;
     private float ActualFireRate;
     // Start is called before the first frame update
