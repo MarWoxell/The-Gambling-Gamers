@@ -23,7 +23,11 @@ public class Debt : MonoBehaviour, Interactable
 
     public void Thing()
     {
-        DebtAmount = DebtAmount - Player.money;
+        if (Player.money >= 50000)
+        {
+            DebtAmount = 0;
+            Player.money -= 50000;
+        }
         Player.money = 0;
     }
 }

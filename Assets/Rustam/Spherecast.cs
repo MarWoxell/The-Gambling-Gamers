@@ -7,7 +7,7 @@ using TMPro;
 public class Spherecast : MonoBehaviour
 {
     //public RawImage Prompt;
-    public TextMeshProUGUI EnterText;
+    public Text EnterText;
     private string EnterString;
     [SerializeField]
     LayerMask mask;

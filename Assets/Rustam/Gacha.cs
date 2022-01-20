@@ -32,7 +32,7 @@ public class Gacha : MonoBehaviour, Interactable
     }
     public void Thing()
     {
-        if (player.moneyAmount >= 1000)
+        if (Player.money >= 1000)
         {
             Gamble();
         }
@@ -40,7 +40,7 @@ public class Gacha : MonoBehaviour, Interactable
 
     void Gamble()
     {
-        player.moneyAmount -= 1000;
+        Player.money -= 1000;
         PlayerAudio.PlayOneShot(GamblingSound);
         int Result = Random.Range(1, 4);
         print(Result);
