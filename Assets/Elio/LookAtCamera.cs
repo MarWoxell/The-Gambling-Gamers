@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class LookAtCamera : MonoBehaviour
 {
+    [SerializeField]
+    GameObject cam;
     // Start is called before the first frame update
     void Start()
     {
-        
+        cam = FindObjectOfType<Camera>().gameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(Camera.main.transform.position, Vector3.up);
+        if (cam != null)
+        {
+            transform.LookAt(cam.transform, Vector3.up);
+        }
+        else
+        {
+            cam = FindObjectOfType<Camera>().gameObject;
+        }
+        
     }
 }

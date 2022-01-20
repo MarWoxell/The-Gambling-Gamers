@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
         print(money);
         if (playerHealth <= 0)
         {
+            healthBar.deadoverlay.SetActive(true);
             print("Dead");
             //SceneManager.LoadScene();
         }
