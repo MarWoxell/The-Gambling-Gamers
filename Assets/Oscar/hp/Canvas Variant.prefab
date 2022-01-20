@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6022053670530898960, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Canvas Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6022053670530898960, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
       propertyPath: m_IsActive
@@ -98,6 +98,10 @@ PrefabInstance:
     - target: {fileID: 6622741933883190478, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7927997452277835815, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
+      propertyPath: m_Text
+      value: YOU DIED
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
