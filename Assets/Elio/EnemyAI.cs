@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject enemy;
     public GameObject projectilePrefab;
     public GameObject moneyPrefab;
+    public PauseMenu pause;
     float distance;
     private bool hasAttacked;
     private bool noDoubles = true;
@@ -23,11 +24,17 @@ public class EnemyAI : MonoBehaviour
     }
     IEnumerator EnemyShootCooldown()
     {
+        if(pause.paused == false)
+        {
         noDoubles = false;
+        }
         //Waits for some time
         yield return new WaitForSecondsRealtime(Random.Range(3f, 5f));
+        if(pause.paused == false)
+        {
         hasAttacked = false;
         noDoubles = true;
+        }
     }
     IEnumerator Attack()
     {
@@ -56,11 +63,11 @@ public class EnemyAI : MonoBehaviour
         {
             agent.isStopped = true;
         }
-        if(distance <= 20 && hasAttacked == false)
+        if(distance <= 20 && hasAttacked == false && pause.paused == false)
         {
             StartCoroutine(Attack());
         }
-        if(hasAttacked == true && noDoubles == true)
+        if(hasAttacked == true && noDoubles == true && pause.paused == false)
         {
             //nextAttack = Time.deltaTime + cooldown;
             StartCoroutine(EnemyShootCooldown());

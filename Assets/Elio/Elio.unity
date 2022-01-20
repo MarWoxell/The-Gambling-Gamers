@@ -848,6 +848,7 @@ MonoBehaviour:
   - {fileID: 1404806922}
   waveAmount: 0a0000001e000000320000004b00000064000000
   i: 0
+  z: 0
   spawnPosition: 0
   waveNumber: 0
 --- !u!212 &921195909
