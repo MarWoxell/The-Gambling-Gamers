@@ -27,9 +27,13 @@ public class SaveManager : MonoBehaviour
     {
         if (File.Exists(Application.persistentDataPath + "/SaveData"))
         {
+            print("11");
             BinaryFormatter bf = new BinaryFormatter();
+            print("12");
             FileStream file = File.Open(Application.persistentDataPath + "/SaveData", FileMode.Open);
+            print("13");
             SaveMoneyAndGuns save = (SaveMoneyAndGuns)bf.Deserialize(file);
+            print("14");
             file.Close();
             
             print("Game data loaded!");

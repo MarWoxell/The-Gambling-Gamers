@@ -18,6 +18,6 @@ public class SaveMoneyAndGuns
         arLV = aR.WeaponLVL;
         shotgun = sg.WeaponLVL;
         pistol = handgun.WeaponLVL;
-        money = cash.moneyAmount;
+        money = cash.realMoney;
     }
 }

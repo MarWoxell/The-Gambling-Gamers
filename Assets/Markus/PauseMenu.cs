@@ -8,11 +8,13 @@ public class PauseMenu : MonoBehaviour
 {
     public bool paused = false;
     public GameObject pauseMenu;
+    public SaveManager save;
     
 
     private void Start()
     {
-        GetComponent<SaveManager>().LoadGame();
+        print("loded maby");
+        save.LoadGame();
         paused = false;
         pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
@@ -51,18 +53,18 @@ public class PauseMenu : MonoBehaviour
     }
     public void game()
     {
-        GetComponent<SaveManager>().SaveGame();
+        save.SaveGame();
         SceneManager.LoadScene("ee");
     }
 
     public void Gacha()
     {
-        GetComponent<SaveManager>().SaveGame();
+        save.SaveGame();
         SceneManager.LoadScene("Oscar");
     }
     public void Quit()
     {
-        GetComponent<SaveManager>().SaveGame();
+        save.SaveGame();
         SceneManager.LoadScene("Markus");
     }
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Debt : MonoBehaviour, Interactable
 {
     public int DebtAmount = 50000;
+    public TimeSave timeSave;
 
 
     public Player player;
@@ -27,6 +28,7 @@ public class Debt : MonoBehaviour, Interactable
         {
             DebtAmount = 0;
             Player.money -= 50000;
+            timeSave.Save();
         }
         Player.money = 0;
     }

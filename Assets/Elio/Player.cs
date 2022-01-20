@@ -7,8 +7,10 @@ public class Player : MonoBehaviour
 {
     public static int playerHealth;
     public static int money;
+    public int realMoney;
     public int maxHealth = 100;
     public int moneyAmount;
+    
     public hpsliderscript healthBar; 
     public AudioSource PlayerAudio;
     public AudioClip PickupSound;
@@ -40,6 +42,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         print(money);
         if (playerHealth <= 0)
         {
