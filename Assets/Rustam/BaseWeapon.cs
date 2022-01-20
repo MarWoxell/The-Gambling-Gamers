@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BaseWeapon : MonoBehaviour
 {
@@ -20,7 +21,9 @@ public class BaseWeapon : MonoBehaviour
     public Transform TrailStart;
     public TrailRenderer BulletTrail;
 
-
+    public Sprite IdleSprite;
+    public Sprite FireSprite;
+    public Image WeaponRenderer;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +44,7 @@ public class BaseWeapon : MonoBehaviour
           if(Ammo > 0)
             {
                 audioSource.PlayOneShot(ShootSound);
-
+                StartCoroutine(Animation());
                 TrailRenderer Trail = Instantiate(BulletTrail, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
                 StartCoroutine(SpawnTrail(Trail, hit));
 
@@ -70,6 +73,13 @@ public class BaseWeapon : MonoBehaviour
         audioSource.PlayOneShot(ReloadSound);
         yield return new WaitForSeconds(Reloadtime);
         Ammo = MagSize;
+    }
+    public IEnumerator Animation()
+    {
+        yield return null;
+        WeaponRenderer.sprite = FireSprite;
+        yield return new WaitForSeconds(0.5f);
+        WeaponRenderer.sprite = IdleSprite;
     }
     public IEnumerator SpawnTrail(TrailRenderer Trail, RaycastHit Hit)
     {

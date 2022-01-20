@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerhp: 0
   ScoreText: {fileID: 0}
-  slider: {fileID: 0}
+  slider: {fileID: 4461506850392867734}
   gradient:
     serializedVersion: 2
     key0: {r: 0.9528302, g: 0, b: 0, a: 1}
@@ -127,7 +127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: -427.2
       objectReference: {fileID: 0}
     - target: {fileID: 1694963115077541901, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -209,6 +209,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1694963115077541900, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
   m_PrefabInstance: {fileID: 3057877277182632856}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4461506850392867734 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1694963115077541902, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}
+  m_PrefabInstance: {fileID: 3057877277182632856}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4461506850392867732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4461506851037808477 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1694963116495938757, guid: b9bd8cba90fdd7246a232a5849cbb726, type: 3}

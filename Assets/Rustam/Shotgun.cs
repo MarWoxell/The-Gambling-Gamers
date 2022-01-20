@@ -6,7 +6,7 @@ public class Shotgun : BaseWeapon
 {
     public int Shellcount;
     public int MaxDev;
-    
+
     void Start()
     {
 
@@ -42,6 +42,7 @@ public class Shotgun : BaseWeapon
             {
                 if (Ammo > 0)
                 {
+                    StartCoroutine(Animation());
                     audioSource.PlayOneShot(ReloadSound);
                     TrailRenderer Trail = Instantiate(BulletTrail, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
                     StartCoroutine(SpawnTrail(Trail, hit));
