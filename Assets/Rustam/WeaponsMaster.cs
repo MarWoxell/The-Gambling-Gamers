@@ -8,6 +8,8 @@ public class WeaponsMaster : MonoBehaviour
     public AR ak;
     public Shotgun shotgun;
 
+    public GameUI gameUi;
+
     // Start is called before the first frame update
     void Start()
     { //Ser till att man börjar med smgn
@@ -38,6 +40,7 @@ public class WeaponsMaster : MonoBehaviour
         shotgun.WeaponActive = false;
         pistol.WeaponRenderer.sprite = pistol.IdleSprite;
         print("1");
+        gameUi.PistolText();
     }
     void AKActive()
     {
@@ -45,8 +48,8 @@ public class WeaponsMaster : MonoBehaviour
         ak.WeaponActive = true;
         shotgun.WeaponActive = false;
         ak.WeaponRenderer.sprite = ak.IdleSprite;
-
         print("2");
+        gameUi.ARText();
     }
     void ShotgunActive()
     {
@@ -55,5 +58,6 @@ public class WeaponsMaster : MonoBehaviour
         shotgun.WeaponActive = true;
         shotgun.WeaponRenderer.sprite = shotgun.IdleSprite;
         print("3");
+        gameUi.ShotgunText();
     }
 }
