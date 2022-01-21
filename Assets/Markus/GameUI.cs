@@ -12,6 +12,7 @@ public class GameUI : MonoBehaviour
     public Pistol pistol;
     public AR aR;
     public Shotgun shotgun;
+    public Player player;
 
     public int gunNumber;
     public void Start()
@@ -21,19 +22,19 @@ public class GameUI : MonoBehaviour
 
     public void Update()
     {
-        money.text = GetComponent<Player>().moneyAmount.ToString();
+        money.text = "$" + player.realMoney.ToString();
 
         if (gunNumber == 0)
         {
-            ammo.text = pistol.Ammo.ToString() + pistol.MagSize.ToString();
+            ammo.text = pistol.Ammo.ToString() + "/" + pistol.MagSize.ToString();
         }
         if (gunNumber == 1)
         {
-            ammo.text = aR.Ammo.ToString() + aR.MagSize.ToString();
+            ammo.text = aR.Ammo.ToString() + "/" + aR.MagSize.ToString();
         }
         if (gunNumber == 2)
         {
-            ammo.text = shotgun.Ammo.ToString() + shotgun.MagSize.ToString();
+            ammo.text = shotgun.Ammo.ToString() + "/" + shotgun.MagSize.ToString();
         }
 
     } 
