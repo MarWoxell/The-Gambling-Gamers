@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class SpawnEnemy : MonoBehaviour
 {
     //Script by Elio
     public GameObject enemyPrefab;
     public Transform[] spawnPoints;
+    public Text wave;
     public int[] waveAmount;
     public int i;
     public int z;
@@ -16,6 +19,7 @@ public class SpawnEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        wave = GetComponent<Text>();
         waveAmount[0] = 1;
         waveNumber++;
     }
@@ -23,7 +27,7 @@ public class SpawnEnemy : MonoBehaviour
     IEnumerator EnemySpawnCooldown()
     {
         //Waits for some time
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSecondsRealtime(1);
     }
 
     // Update is called once per frame
@@ -32,6 +36,7 @@ public class SpawnEnemy : MonoBehaviour
         //If there are no enemies alive
         if (areThereEnemiesAlive == 0)
         {
+            //StartCoroutine(NextWave());
             waveAmount[waveNumber] = waveAmount[waveNumber - 1] * 2;
 
             //Spawns the enemy according to the amount speciefied in waveAmount
@@ -45,7 +50,7 @@ public class SpawnEnemy : MonoBehaviour
                 //Spawns enemy after a cooldown
                 else
                 {
-                    EnemySpawnCooldown();
+                    StartCoroutine(EnemySpawnCooldown());
                     SpawnsEnemy();
                 }
 
@@ -63,5 +68,11 @@ public class SpawnEnemy : MonoBehaviour
         spawnPosition = Random.Range(0, 8);
         //Spawns enemy
         Instantiate(enemyPrefab, spawnPoints[spawnPosition].position, spawnPoints[spawnPosition].rotation);
+    }
+    public IEnumerator NextWave()
+    {
+
+        wave.text = "Starting wave" + (waveNumber + 1).ToString();
+        yield return new WaitForSecondsRealtime(3);
     }
 }
