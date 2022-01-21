@@ -24,6 +24,7 @@ public class BaseWeapon : MonoBehaviour
     public Sprite IdleSprite;
     public Sprite FireSprite;
     public Image WeaponRenderer;
+    public Text ReloadText;
 
     // Start is called before the first frame update
     void Start()
@@ -70,8 +71,10 @@ public class BaseWeapon : MonoBehaviour
     public IEnumerator Reload()
     {
         yield return null;
+        ReloadText.text = "Reloading...";
         audioSource.PlayOneShot(ReloadSound);
         yield return new WaitForSeconds(Reloadtime);
+        ReloadText.text = "";
         Ammo = MagSize;
     }
     public IEnumerator Animation()

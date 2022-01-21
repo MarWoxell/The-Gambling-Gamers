@@ -25,6 +25,10 @@ public class AR : BaseWeapon
                     StartCoroutine(FirePause());
                 }
             }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                StartCoroutine(Reload());
+            }
         }
         DamageFormula();
     }

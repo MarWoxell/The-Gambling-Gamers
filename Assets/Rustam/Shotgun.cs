@@ -23,6 +23,10 @@ public class Shotgun : BaseWeapon
                 print("Firing");
                 Fire();
             }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                StartCoroutine(Reload());
+            }
         }
         DamageFormula();
     }
