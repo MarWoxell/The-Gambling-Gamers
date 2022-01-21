@@ -19,7 +19,6 @@ public class SpawnEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        wave = GetComponent<Text>();
         waveAmount[0] = 1;
         waveNumber++;
     }
@@ -36,7 +35,7 @@ public class SpawnEnemy : MonoBehaviour
         //If there are no enemies alive
         if (areThereEnemiesAlive == 0)
         {
-            //StartCoroutine(NextWave());
+            StartCoroutine(NextWave());
             waveAmount[waveNumber] = waveAmount[waveNumber - 1] * 2;
 
             //Spawns the enemy according to the amount speciefied in waveAmount
@@ -71,8 +70,8 @@ public class SpawnEnemy : MonoBehaviour
     }
     public IEnumerator NextWave()
     {
-
-        wave.text = "Starting wave" + (waveNumber + 1).ToString();
+        wave.text = "Starting wave " + waveNumber.ToString();
         yield return new WaitForSecondsRealtime(3);
+        wave.text = null;
     }
 }
