@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DontDestroyNumbers : MonoBehaviour
 {
-    public int money;
-    public int weaponLevel;
+    /*public int money;
+    public int weaponLevel;*/
     // Start is called before the first frame update
     void Start()
     {
