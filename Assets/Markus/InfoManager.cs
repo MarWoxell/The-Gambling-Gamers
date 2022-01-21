@@ -70,6 +70,16 @@ public class InfoManager : MonoBehaviour
     public void EndDialogue()
     {
         Debug.Log("End of story");
-        SceneManager.LoadScene("ee");
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Markus2")) 
+        {
+            SceneManager.LoadScene("Markus");
+            Debug.Log("yyyyerydfchgyutfgyhuiguvjbhuij");
+        }
+        else
+        {
+            SceneManager.LoadScene("ee");
+        }
+        
     }
 }
