@@ -28,6 +28,7 @@ public class Debt : MonoBehaviour, Interactable
         {
             DebtAmount = 0;
             Player.money -= 50000;
+            GetComponent<TriggerStory>().StoryTrigger();
             timeSave.Save();
         }
         Player.money = 0;

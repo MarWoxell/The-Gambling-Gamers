@@ -71,10 +71,9 @@ public class InfoManager : MonoBehaviour
     {
         Debug.Log("End of story");
 
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Markus2")) 
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("ee")) 
         {
             SceneManager.LoadScene("Markus");
-            Debug.Log("yyyyerydfchgyutfgyhuiguvjbhuij");
         }
         else
         {

@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 587675022230343801, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 587675022230343801, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -18,7 +22,7 @@ PrefabInstance:
     - target: {fileID: 587675022230343801, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: 38debc101f728c24883c2db0e5cafe35, type: 3}
+      objectReference: {fileID: 11500000, guid: cb0dbc2cbbfb2f547bd23718cd6c8fb3, type: 3}
     - target: {fileID: 587675022230343801, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -35,6 +39,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4180099042103820179, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 263
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180099042103820179, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 141
+      objectReference: {fileID: 0}
     - target: {fileID: 6022053670530898960, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
       propertyPath: m_Name
       value: Canvas Variant
@@ -42,6 +54,10 @@ PrefabInstance:
     - target: {fileID: 6022053670530898960, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109946336139741674, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6622741933883190478, guid: 33bbdb549afb888419637e8882bf23a7, type: 3}
       propertyPath: m_Pivot.x
