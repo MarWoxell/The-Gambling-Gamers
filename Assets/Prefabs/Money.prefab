@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5604535232921066691}
   - component: {fileID: 4228354523363350207}
   - component: {fileID: 3653869067326941663}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Money
   m_TagString: Money
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 7574126974088084297}
   - component: {fileID: 6964787906106417152}
   - component: {fileID: 3787674969896580038}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,4 +208,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a835d1508d8f0747ab25b0988bc2322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
+  cam: {fileID: 0}

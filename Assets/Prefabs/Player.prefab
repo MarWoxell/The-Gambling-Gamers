@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3529045586056417530}
   - component: {fileID: 580074689275909651}
   - component: {fileID: 4069720618584850658}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5865562402359371792}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trail Start Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 2825051525071476006}
   - component: {fileID: 1119756}
   - component: {fileID: 1415677857}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -319,6 +319,9 @@ MonoBehaviour:
   ShootSound: {fileID: 8300000, guid: 452a6174ca79680489e67893bde1710d, type: 3}
   ReloadSound: {fileID: 8300000, guid: 59a1e8d6089326641bb4070ecf23ed8d, type: 3}
   audioSource: {fileID: 1119756}
+  mask:
+    serializedVersion: 2
+    m_Bits: 128
   Damage: 10
   BaseDamage: 10
   Range: 1000
@@ -349,6 +352,9 @@ MonoBehaviour:
   ShootSound: {fileID: 8300000, guid: 0141eaa3ee6235143a608d9fe21f357e, type: 3}
   ReloadSound: {fileID: 8300000, guid: 891073b8802479d42b8eaeeb88363687, type: 3}
   audioSource: {fileID: 1119756}
+  mask:
+    serializedVersion: 2
+    m_Bits: 128
   Damage: 50
   BaseDamage: 50
   Range: 1000
@@ -379,6 +385,9 @@ MonoBehaviour:
   ShootSound: {fileID: 8300000, guid: b61e5970ad690ca4ba8d03cbe990c2aa, type: 3}
   ReloadSound: {fileID: 8300000, guid: 239636bb0daf5d949b3bf17c0e51e5c7, type: 3}
   audioSource: {fileID: 1119756}
+  mask:
+    serializedVersion: 2
+    m_Bits: 128
   Damage: 50
   BaseDamage: 50
   Range: 1000

@@ -59,6 +59,11 @@ public class BaseWeapon : MonoBehaviour
                 {
                     enemy.TakeDamage(Damage);
                 }
+                EnemyHead enemyHead = hit.transform.GetComponent<EnemyHead>();
+                if(enemyHead != null)
+                {
+                    enemyHead.health -= (Damage * 2);
+                }
 
                 Projectile projectile = hit.transform.GetComponent<Projectile>();
                 if (projectile != null)

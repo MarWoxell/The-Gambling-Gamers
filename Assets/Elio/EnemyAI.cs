@@ -9,6 +9,7 @@ public class EnemyAI : MonoBehaviour
     public NavMeshAgent agent;
     public Transform player;
     private Transform enemyTransform;
+    public EnemyHead head;
     public GameObject enemy;
     public GameObject projectilePrefab;
     public GameObject moneyPrefab;
@@ -16,7 +17,6 @@ public class EnemyAI : MonoBehaviour
     float distance;
     private bool hasAttacked;
     private bool noDoubles = true;
-    public int health = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +45,7 @@ public class EnemyAI : MonoBehaviour
     }
     public void TakeDamage(int amount)
     {
-        health -= amount;
+        head.health -= amount;
     }
 
     // Update is called once per frame
@@ -73,7 +73,7 @@ public class EnemyAI : MonoBehaviour
             StartCoroutine(EnemyShootCooldown());
         }
 
-        if (health <= 0)
+        if (head.health <= 0)
         {
             Instantiate(moneyPrefab, enemyTransform.position, enemyTransform.rotation);
             SpawnEnemy.areThereEnemiesAlive--;
