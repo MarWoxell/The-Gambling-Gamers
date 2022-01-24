@@ -42,7 +42,7 @@ public class Shotgun : BaseWeapon
 
             audioSource.PlayOneShot(ShootSound, 1F);
             RaycastHit hit;
-            if (Physics.Raycast(Cam.transform.position, ForwardVector, out hit, Range))
+            if (Physics.Raycast(Cam.transform.position, ForwardVector, out hit, Range, ~mask))
             {
                 if (Ammo > 0)
                 {

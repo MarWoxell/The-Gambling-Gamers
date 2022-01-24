@@ -8,6 +8,7 @@ public class BaseWeapon : MonoBehaviour
     public AudioClip ShootSound;
     public AudioClip ReloadSound;
     public AudioSource audioSource;
+    public LayerMask mask;
 
     public int Damage;
     public int BaseDamage;
@@ -35,12 +36,16 @@ public class BaseWeapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
     }
     public virtual void Fire()
     {
         audioSource.PlayOneShot(ShootSound, 1F);
         RaycastHit hit;
-        if(Physics.Raycast(Cam.transform.position, Cam.transform.forward, out hit, Range))
+
+ 
+        if(Physics.Raycast(Cam.transform.position, Cam.transform.forward, out hit, Range, ~mask))
+            
           {
           if(Ammo > 0)
             {

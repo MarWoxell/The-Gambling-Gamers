@@ -16,7 +16,8 @@ public class Pistol : BaseWeapon
     // Update is called once per frame
     void Update()
     {
-        if(WeaponLVL > 0 && WeaponActive == true)
+        Debug.DrawRay(Cam.transform.position, Cam.transform.forward * Range);
+        if (WeaponLVL > 0 && WeaponActive == true)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
