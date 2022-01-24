@@ -8,13 +8,13 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController playerController;
     Vector3 playerVector;
     float gravity = -9.82f;
-    public float speed = 12f;
+    public float speed;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        speed = 12f;
     }
 
     // Update is called once per frame
@@ -33,5 +33,14 @@ public class PlayerMovement : MonoBehaviour
         //Moves player based by speed and direction and velocity
         playerController.Move(movement * speed * Time.deltaTime);
         playerController.Move(playerVector * Time.deltaTime);
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 24;
+        }
+        else
+        {
+            speed = 12;
+        }
     }
 }
