@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2773363664602399973}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.56, z: 0}
+  m_LocalPosition: {x: 0, y: 0.671, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7129518057773384007}
@@ -107,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5043076776782124811}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0.042}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7129518057773384007}
@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 9048265360340734370}
   - component: {fileID: 2825051525071476006}
   - component: {fileID: 1119756}
+  - component: {fileID: 1415677857}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -299,6 +300,7 @@ MonoBehaviour:
   realMoney: 0
   maxHealth: 100
   moneyAmount: 100
+  damage: 10
   healthBar: {fileID: 0}
   PlayerAudio: {fileID: 1119756}
   PickupSound: {fileID: 8300000, guid: fdab8851a0707b44db0fceeea5d29e93, type: 3}
@@ -331,6 +333,7 @@ MonoBehaviour:
   IdleSprite: {fileID: 6968676508565965015, guid: f39ba397d262d3f46a7e410aba35d73a, type: 3}
   FireSprite: {fileID: -3080378922903692436, guid: f39ba397d262d3f46a7e410aba35d73a, type: 3}
   WeaponRenderer: {fileID: 0}
+  ReloadText: {fileID: 0}
 --- !u!114 &6375910999618965496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,8 +353,8 @@ MonoBehaviour:
   BaseDamage: 50
   Range: 1000
   Cam: {fileID: 580074689275909651}
-  MagSize: 100
-  Ammo: 100
+  MagSize: 12
+  Ammo: 12
   Reloadtime: 1
   WeaponLVL: 1
   WeaponActive: 0
@@ -360,6 +363,7 @@ MonoBehaviour:
   IdleSprite: {fileID: 9088871700217863492, guid: 23a2a94efef103f4d96ffba0431ec2b9, type: 3}
   FireSprite: {fileID: -2323837509293720870, guid: 23a2a94efef103f4d96ffba0431ec2b9, type: 3}
   WeaponRenderer: {fileID: 0}
+  ReloadText: {fileID: 0}
 --- !u!114 &394077923090774711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +393,7 @@ MonoBehaviour:
   IdleSprite: {fileID: -1327772284964029535, guid: 71922a73ecb40ac479e53bbc31337954, type: 3}
   FireSprite: {fileID: 7211413432068637484, guid: 71922a73ecb40ac479e53bbc31337954, type: 3}
   WeaponRenderer: {fileID: 0}
+  ReloadText: {fileID: 0}
   Shellcount: 5
   MaxDev: 20
 --- !u!114 &9048265360340734370
@@ -406,7 +411,7 @@ MonoBehaviour:
   pistol: {fileID: 6375910999618965496}
   ak: {fileID: 3583718296038312401}
   shotgun: {fileID: 394077923090774711}
-  gameUi: {fileID: 0}
+  gameUi: {fileID: 1415677857}
 --- !u!114 &2825051525071476006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,7 +438,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 187d313da0cbdc34ba20eaf81f05ab57, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d8af355628b4ba244a0925153b634a1e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -519,3 +524,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1415677857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7129518057773384061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a485bf16dafebc438c5b9443ecb3fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: {fileID: 0}
+  gun: {fileID: 0}
+  ammo: {fileID: 0}
+  pistol: {fileID: 6375910999618965496}
+  aR: {fileID: 3583718296038312401}
+  shotgun: {fileID: 394077923090774711}
+  player: {fileID: 0}
+  gunNumber: 0
