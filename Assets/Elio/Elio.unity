@@ -1782,11 +1782,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1963909539}
   player: {fileID: 405042404}
+  head: {fileID: 0}
   enemy: {fileID: 1963909533}
   projectilePrefab: {fileID: 8535082091285017064, guid: de617f305ff67cb479b684e91da8075d, type: 3}
   moneyPrefab: {fileID: 6298091969150044683}
+  healhtPrefab: {fileID: 0}
   pause: {fileID: 0}
-  health: 100
+  drops: 0
 --- !u!195 &1963909539
 NavMeshAgent:
   m_ObjectHideFlags: 0

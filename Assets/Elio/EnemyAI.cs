@@ -8,7 +8,6 @@ public class EnemyAI : MonoBehaviour
     //Script by Elio
     public NavMeshAgent agent;
     public Transform player;
-    private Transform enemyTransform;
     public EnemyHead head;
     public GameObject enemy, projectilePrefab, moneyPrefab, healhtPrefab;
     public PauseMenu pause;
@@ -19,7 +18,7 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemyTransform = enemy.transform;
+
     }
     IEnumerator EnemyShootCooldown()
     {
@@ -37,7 +36,7 @@ public class EnemyAI : MonoBehaviour
     }
     IEnumerator Attack()
     {
-        Instantiate(projectilePrefab, enemyTransform.position, enemyTransform.rotation);
+        Instantiate(projectilePrefab, transform.position, transform.rotation);
         hasAttacked = true;
         yield return new WaitForSecondsRealtime(5);
         //Destroy(attack);
@@ -54,15 +53,22 @@ public class EnemyAI : MonoBehaviour
         transform.LookAt(player);
         distance = Vector3.Distance(player.position, enemy.transform.position);
         //print(distance);
-        if(distance >= 8)
+        if(distance >= 50)
         {
             agent.isStopped = false;
             ChasePlayer();
         }
         else
         {
+            Vector3 toPlayer = player.transform.position - transform.position;
+            if (Vector3.Distance(player.transform.position, transform.position) < 3)
+            {
+                Vector3 targetPosition = toPlayer.normalized * -3f;
+                agent.destination = targetPosition;
+            }
             agent.isStopped = true;
         }
+
         if(distance <= 20 && hasAttacked == false && pause.paused == false)
         {
             StartCoroutine(Attack());
@@ -77,11 +83,11 @@ public class EnemyAI : MonoBehaviour
         {
             if(drops == 0 && Player.playerHealth < 100)
             {
-                Instantiate(healhtPrefab, enemyTransform.position, enemyTransform.rotation);
+                Instantiate(healhtPrefab, transform.position, transform.rotation);
             }
             else
             {
-            Instantiate(moneyPrefab, enemyTransform.position, enemyTransform.rotation);
+            Instantiate(moneyPrefab, transform.position, transform.rotation);
             }
             SpawnEnemy.areThereEnemiesAlive--;
             Destroy(this.gameObject);
