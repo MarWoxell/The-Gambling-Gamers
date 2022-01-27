@@ -80,6 +80,7 @@ public class BaseWeapon : MonoBehaviour
     }
     public IEnumerator Reload()
     {
+        Ammo = -1;
         yield return null;
         ReloadText.text = "Reloading...";
         audioSource.PlayOneShot(ReloadSound);

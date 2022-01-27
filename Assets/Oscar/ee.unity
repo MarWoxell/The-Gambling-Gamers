@@ -148,6 +148,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1814873293}
     - target: {fileID: 394077923090774711, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
+      propertyPath: Damage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 394077923090774711, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
+      propertyPath: BaseDamage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 394077923090774711, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
       propertyPath: ReloadText
       value: 
       objectReference: {fileID: 611532284}
@@ -159,6 +167,10 @@ PrefabInstance:
       propertyPath: EnterText
       value: 
       objectReference: {fileID: 1140719315}
+    - target: {fileID: 3583718296038312401, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
+      propertyPath: BaseDamage
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3583718296038312401, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
       propertyPath: ReloadText
       value: 
