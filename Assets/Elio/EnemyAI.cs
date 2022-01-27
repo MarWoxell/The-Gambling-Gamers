@@ -10,10 +10,9 @@ public class EnemyAI : MonoBehaviour
     public Transform player;
     private Transform enemyTransform;
     public EnemyHead head;
-    public GameObject enemy;
-    public GameObject projectilePrefab;
-    public GameObject moneyPrefab;
+    public GameObject enemy, projectilePrefab, moneyPrefab, healhtPrefab;
     public PauseMenu pause;
+    public int drops;
     float distance;
     private bool hasAttacked;
     private bool noDoubles = true;
@@ -51,6 +50,7 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        drops = Random.Range(0, 1);
         transform.LookAt(player);
         distance = Vector3.Distance(player.position, enemy.transform.position);
         //print(distance);
@@ -75,7 +75,14 @@ public class EnemyAI : MonoBehaviour
 
         if (head.health <= 0)
         {
+            if(drops == 0 && Player.playerHealth < 100)
+            {
+                Instantiate(healhtPrefab, enemyTransform.position, enemyTransform.rotation);
+            }
+            else
+            {
             Instantiate(moneyPrefab, enemyTransform.position, enemyTransform.rotation);
+            }
             SpawnEnemy.areThereEnemiesAlive--;
             Destroy(this.gameObject);
         }
