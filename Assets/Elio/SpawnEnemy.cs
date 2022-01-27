@@ -14,13 +14,14 @@ public class SpawnEnemy : MonoBehaviour
     public int i;
     public int z;
     public int spawnPosition;
-    public int waveNumber = 0;
-    public static int areThereEnemiesAlive = 0;
+    public int waveNumber;
+    public static int areThereEnemiesAlive;
     // Start is called before the first frame update
     void Start()
     {
+        areThereEnemiesAlive = 0;
         waveAmount[0] = 1;
-        waveNumber++;
+        waveNumber = 1;
     }
 
     IEnumerator EnemySpawnCooldown()

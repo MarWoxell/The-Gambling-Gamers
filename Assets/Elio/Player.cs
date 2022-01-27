@@ -29,6 +29,11 @@ public class Player : MonoBehaviour
             PlayerAudio.PlayOneShot(PickupSound);
             Destroy(other.gameObject);
         }
+        if (other.gameObject.tag == "HealthPack")
+        {
+            playerHealth += 30;
+            Destroy(other.gameObject);
+        }
     }
     public void OnCollisionEnter(Collision collision)
     {
