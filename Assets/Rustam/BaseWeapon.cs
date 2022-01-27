@@ -21,6 +21,7 @@ public class BaseWeapon : MonoBehaviour
     public bool WeaponActive;
     public Transform TrailStart;
     public TrailRenderer BulletTrail;
+    public GameObject LightSource;
 
     public Sprite IdleSprite;
     public Sprite FireSprite;
@@ -52,6 +53,9 @@ public class BaseWeapon : MonoBehaviour
                 audioSource.PlayOneShot(ShootSound);
                 StartCoroutine(Animation());
                 TrailRenderer Trail = Instantiate(BulletTrail, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
+                GameObject Light = Instantiate(LightSource, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
+                Light.transform.parent = Trail.transform;
+
                 StartCoroutine(SpawnTrail(Trail, hit));
 
                 EnemyAI enemy = hit.transform.GetComponent<EnemyAI>();

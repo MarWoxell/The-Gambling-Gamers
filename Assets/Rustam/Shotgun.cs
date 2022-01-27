@@ -49,6 +49,8 @@ public class Shotgun : BaseWeapon
                     StartCoroutine(Animation());
                     audioSource.PlayOneShot(ReloadSound);
                     TrailRenderer Trail = Instantiate(BulletTrail, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
+                    GameObject Light = Instantiate(LightSource, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
+                    Light.transform.parent = Trail.transform;
                     StartCoroutine(SpawnTrail(Trail, hit));
 
                     EnemyAI enemy = hit.transform.GetComponent<EnemyAI>();
