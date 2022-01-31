@@ -9,7 +9,7 @@ public class hpsliderscript : MonoBehaviour
     public int playerhp;
     public static bool isDead;
 
-    public Text ScoreText;
+    
     public Slider slider;
 
     public Gradient gradient;
@@ -50,12 +50,12 @@ public class hpsliderscript : MonoBehaviour
           //v  heal(100);
         }
          if (playerhp <= 0)
-        {
+        {// säter boolen som är att du är död till true sedan så säter på deat overlayensedan tar fram cursorn
             isDead = true;
             Time.timeScale = 0;
             deadoverlay.SetActive(true); 
             Cursor.lockState = CursorLockMode.None;
-            //ScoreText.text = "Score: " + GetComponent<timeskriptet>().score;
+          
 
 
         }
