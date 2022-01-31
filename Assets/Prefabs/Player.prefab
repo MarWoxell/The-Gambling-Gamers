@@ -395,6 +395,8 @@ MonoBehaviour:
   TrailStart: {fileID: 5865562402359371792}
   BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
   LightSource: {fileID: 3138172058342566021, guid: e09ec96684512d040a8029530f271c4f, type: 3}
+  IsReloading: 0
+  StopShoot: 0
   IdleSprite: {fileID: 6968676508565965015, guid: f39ba397d262d3f46a7e410aba35d73a, type: 3}
   FireSprite: {fileID: -3080378922903692436, guid: f39ba397d262d3f46a7e410aba35d73a, type: 3}
   WeaponRenderer: {fileID: 0}
@@ -429,6 +431,8 @@ MonoBehaviour:
   TrailStart: {fileID: 5865562402359371792}
   BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
   LightSource: {fileID: 3138172058342566021, guid: e09ec96684512d040a8029530f271c4f, type: 3}
+  IsReloading: 0
+  StopShoot: 0
   IdleSprite: {fileID: 9088871700217863492, guid: 23a2a94efef103f4d96ffba0431ec2b9, type: 3}
   FireSprite: {fileID: -2323837509293720870, guid: 23a2a94efef103f4d96ffba0431ec2b9, type: 3}
   WeaponRenderer: {fileID: 0}
@@ -451,8 +455,8 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 128
-  Damage: 30
-  BaseDamage: 30
+  Damage: 15
+  BaseDamage: 15
   Range: 1000
   Cam: {fileID: 580074689275909651}
   MagSize: 4
@@ -463,12 +467,14 @@ MonoBehaviour:
   TrailStart: {fileID: 5865562402359371792}
   BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
   LightSource: {fileID: 3138172058342566021, guid: e09ec96684512d040a8029530f271c4f, type: 3}
+  IsReloading: 0
+  StopShoot: 0
   IdleSprite: {fileID: -1327772284964029535, guid: 71922a73ecb40ac479e53bbc31337954, type: 3}
   FireSprite: {fileID: 7211413432068637484, guid: 71922a73ecb40ac479e53bbc31337954, type: 3}
   WeaponRenderer: {fileID: 0}
   ReloadText: {fileID: 0}
-  Shellcount: 5
-  MaxDev: 20
+  Shellcount: 10
+  MaxDev: 0.1
 --- !u!114 &9048265360340734370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,7 +490,8 @@ MonoBehaviour:
   pistol: {fileID: 6375910999618965496}
   ak: {fileID: 3583718296038312401}
   shotgun: {fileID: 394077923090774711}
-  gameUi: {fileID: 1415677857}
+  gameUi: {fileID: 0}
+  TrailStart: {fileID: 5865562402359371792}
 --- !u!114 &2825051525071476006
 MonoBehaviour:
   m_ObjectHideFlags: 0
