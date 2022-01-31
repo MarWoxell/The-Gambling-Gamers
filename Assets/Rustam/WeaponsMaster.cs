@@ -9,6 +9,7 @@ public class WeaponsMaster : MonoBehaviour
     public Shotgun shotgun;
 
     public GameUI gameUi;
+    public Transform TrailStart;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class WeaponsMaster : MonoBehaviour
         pistol.WeaponRenderer.sprite = pistol.IdleSprite;
         print("1");
         gameUi.PistolText();
+        TrailStart.transform.localPosition = new Vector3 (0.1f, 0.5f, 0.1f);
     }
     void AKActive()
     {
@@ -50,6 +52,7 @@ public class WeaponsMaster : MonoBehaviour
         ak.WeaponRenderer.sprite = ak.IdleSprite;
         print("2");
         gameUi.ARText();
+        TrailStart.transform.localPosition = new Vector3(-0.015f, 0.5f, 0.1f);
     }
     void ShotgunActive()
     {
@@ -59,5 +62,6 @@ public class WeaponsMaster : MonoBehaviour
         shotgun.WeaponRenderer.sprite = shotgun.IdleSprite;
         print("3");
         gameUi.ShotgunText();
+        TrailStart.transform.localPosition = new Vector3(0.075f, 0.5f, 0.3f);
     }
 }

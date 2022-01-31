@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shotgun : BaseWeapon
 {
     public int Shellcount;
-    public int MaxDev;
+    public float MaxDev;
 
     void Start()
     {
@@ -16,12 +16,11 @@ public class Shotgun : BaseWeapon
     // Update is called once per frame
     void Update()
     {
-        if (WeaponLVL > 0 && WeaponActive == true)
+        if (WeaponLVL > 0 && WeaponActive == true && IsReloading == false && StopShoot == false)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                print("Firing");
-                Fire();
+                StartCoroutine(FirePause());
             }
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -30,21 +29,38 @@ public class Shotgun : BaseWeapon
         }
         DamageFormula();
     }
+    IEnumerator FirePause()
+    {
+        //Cooldownen startas
+        StopShoot = true;
+        yield return null;
+        Fire();
+        //0.25 Sekunder senare slutar cooldownen
+        yield return new WaitForSeconds(1f);
+        StopShoot = false;
+    }
     public override void Fire()
     {
-        for (int i = 1; i <= Shellcount; i++)
+        print("Firing");
+        if(Ammo > 0)
         {
-            Vector3 ForwardVector = Vector3.forward;
-            float Deviation = Random.Range(0f, MaxDev);
-            ForwardVector = Quaternion.AngleAxis(Deviation, Vector3.up) * ForwardVector;
-            ForwardVector = Cam.transform.rotation * ForwardVector;
-
-
-            audioSource.PlayOneShot(ShootSound, 1F);
-            RaycastHit hit;
-            if (Physics.Raycast(Cam.transform.position, ForwardVector, out hit, Range, ~mask))
+            for (int i = 1; i <= Shellcount; i++)
             {
-                if (Ammo > 0)
+                /*Vector3 ForwardVector = Vector3.forward;
+                float Deviation = Random.Range(0f, MaxDev);
+                ForwardVector = Quaternion.AngleAxis(Deviation, Vector3.up) * ForwardVector;
+                ForwardVector = Cam.transform.rotation * ForwardVector;*/
+
+                /*Vector3 ForwardVector = Cam.transform.forward;
+                ForwardVector += MaxDev * (Random.Range(0, 2)) * Cam.transform.right;
+                ForwardVector += MaxDev * (Random.Range(0, 2)) * Cam.transform.up;*/
+
+                var v3Offset = transform.up * Random.Range(0.0f, MaxDev);
+                v3Offset = Quaternion.AngleAxis(Random.Range(0.0f, 360.0f), transform.forward) * v3Offset;
+                Vector3 ForwardVector = transform.forward + v3Offset;
+
+                RaycastHit hit;
+                if (Physics.Raycast(Cam.transform.position, ForwardVector, out hit, Range, ~mask))
                 {
                     StartCoroutine(Animation());
                     audioSource.PlayOneShot(ReloadSound);
@@ -69,15 +85,17 @@ public class Shotgun : BaseWeapon
                     {
                         projectile.DestroyProjectile();
                     }
-                    //Ammo--;
-                }
-                else
-                {
-                    StartCoroutine(Reload());
+                    
                 }
             }
+            audioSource.PlayOneShot(ShootSound, 1F);
+            Ammo--;
         }
-        Ammo--;
+        else
+        {
+            StartCoroutine(Reload());
+        }
+
     }
     public override void DamageFormula()
     {

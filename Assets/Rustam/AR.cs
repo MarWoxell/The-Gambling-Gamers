@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AR : BaseWeapon
 {
-    private bool StopShoot = false;
     private float ActualFireRate;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +15,7 @@ public class AR : BaseWeapon
     // Update is called once per frame
     void Update()
     {
-        if (WeaponLVL > 0 && WeaponActive == true)
+        if (WeaponLVL > 0 && WeaponActive == true && IsReloading == false)
         {
             if (Input.GetKey(KeyCode.Mouse0))
             {

@@ -22,6 +22,8 @@ public class BaseWeapon : MonoBehaviour
     public Transform TrailStart;
     public TrailRenderer BulletTrail;
     public GameObject LightSource;
+    public bool IsReloading = false;
+    public bool StopShoot = false;
 
     public Sprite IdleSprite;
     public Sprite FireSprite;
@@ -84,13 +86,15 @@ public class BaseWeapon : MonoBehaviour
     }
     public IEnumerator Reload()
     {
-        Ammo = -1;
+        IsReloading = true;
+        Ammo = 0;
         yield return null;
         ReloadText.text = "Reloading...";
         audioSource.PlayOneShot(ReloadSound);
         yield return new WaitForSeconds(Reloadtime);
         ReloadText.text = "";
         Ammo = MagSize;
+        IsReloading = false;
     }
     public IEnumerator Animation()
     {
