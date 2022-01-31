@@ -45,6 +45,10 @@ public class hpsliderscript : MonoBehaviour
 
     private void Update()
     {
+        if(playerhp > 100)
+        {
+            playerhp = 100;
+        }
         if (Input.GetKeyDown(KeyCode.C))
         {
           //v  heal(100);
@@ -82,7 +86,7 @@ public class hpsliderscript : MonoBehaviour
         SceneManager.LoadScene(2);
 
     }
-    public void menu()
+    public void Menu()
     {// går till back atill menu
 
 

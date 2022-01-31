@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3529045586056417530}
   - component: {fileID: 580074689275909651}
   - component: {fileID: 4069720618584850658}
+  - component: {fileID: 2773363664601420516}
   m_Layer: 7
   m_Name: Camera
   m_TagString: Untagged
@@ -83,6 +84,66 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2773363664602399973}
   m_Enabled: 1
+--- !u!114 &2773363664601420516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2773363664602399973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 3529045586056417530}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &5043076776782124811
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a9a128bab36b5418cb16f3df89ec91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 500
+  mouseSensitivity: 250
   cameraTransform: {fileID: 3529045586056417530}
 --- !u!54 &1300844094
 Rigidbody:
@@ -323,7 +384,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   Damage: 10
-  BaseDamage: 10
+  BaseDamage: 30
   Range: 1000
   Cam: {fileID: 580074689275909651}
   MagSize: 30
@@ -333,6 +394,7 @@ MonoBehaviour:
   WeaponActive: 0
   TrailStart: {fileID: 5865562402359371792}
   BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
+  LightSource: {fileID: 3138172058342566021, guid: e09ec96684512d040a8029530f271c4f, type: 3}
   IdleSprite: {fileID: 6968676508565965015, guid: f39ba397d262d3f46a7e410aba35d73a, type: 3}
   FireSprite: {fileID: -3080378922903692436, guid: f39ba397d262d3f46a7e410aba35d73a, type: 3}
   WeaponRenderer: {fileID: 0}
@@ -366,6 +428,7 @@ MonoBehaviour:
   WeaponActive: 0
   TrailStart: {fileID: 5865562402359371792}
   BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
+  LightSource: {fileID: 3138172058342566021, guid: e09ec96684512d040a8029530f271c4f, type: 3}
   IdleSprite: {fileID: 9088871700217863492, guid: 23a2a94efef103f4d96ffba0431ec2b9, type: 3}
   FireSprite: {fileID: -2323837509293720870, guid: 23a2a94efef103f4d96ffba0431ec2b9, type: 3}
   WeaponRenderer: {fileID: 0}
@@ -388,8 +451,8 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 128
-  Damage: 50
-  BaseDamage: 50
+  Damage: 30
+  BaseDamage: 30
   Range: 1000
   Cam: {fileID: 580074689275909651}
   MagSize: 4
@@ -399,6 +462,7 @@ MonoBehaviour:
   WeaponActive: 1
   TrailStart: {fileID: 5865562402359371792}
   BulletTrail: {fileID: 1283043262367188350, guid: f5df3342b04f7044ab06932a7586a70e, type: 3}
+  LightSource: {fileID: 3138172058342566021, guid: e09ec96684512d040a8029530f271c4f, type: 3}
   IdleSprite: {fileID: -1327772284964029535, guid: 71922a73ecb40ac479e53bbc31337954, type: 3}
   FireSprite: {fileID: 7211413432068637484, guid: 71922a73ecb40ac479e53bbc31337954, type: 3}
   WeaponRenderer: {fileID: 0}
