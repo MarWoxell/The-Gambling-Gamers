@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public static int money;
+    //public static int money;
     public int realMoney;
     public int maxHealth = 100;
     public int moneyAmount;
@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Money")
         {
-            money += moneyAmount;
+            SaveObject.instance.money += moneyAmount;
             PlayerAudio.PlayOneShot(PickupSound);
             Destroy(other.gameObject);
         }
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         
-        print(money);
+        print(SaveObject.instance.money);
         if (healthBar.playerhp <= 0)
         {
             hpsliderscript.isDead = true;

@@ -22,7 +22,7 @@ public class GameUI : MonoBehaviour
 
     public void Update()
     {
-        money.text = "$" + Player.money.ToString();
+        money.text = "$" + SaveObject.instance.money.ToString();
 
         if (gunNumber == 0)
         {

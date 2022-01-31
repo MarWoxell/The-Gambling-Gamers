@@ -16,7 +16,7 @@ public class Shotgun : BaseWeapon
     // Update is called once per frame
     void Update()
     {
-        if (WeaponLVL > 0 && WeaponActive == true && IsReloading == false && StopShoot == false)
+        if (SaveObject.instance.shotgunLv > 0 && WeaponActive == true && IsReloading == false && StopShoot == false)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
@@ -99,6 +99,6 @@ public class Shotgun : BaseWeapon
     }
     public override void DamageFormula()
     {
-        Damage = BaseDamage + (2 * (WeaponLVL - 1));
+        Damage = BaseDamage + (2 * (SaveObject.instance.shotgunLv - 1));
     }
 }

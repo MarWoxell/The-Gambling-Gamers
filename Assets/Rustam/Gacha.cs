@@ -32,7 +32,7 @@ public class Gacha : MonoBehaviour, Interactable
     }
     public void Thing()
     {
-        if (Player.money >= 1000)
+        if (SaveObject.instance.money >= 1000)
         {
             Gamble();
         }
@@ -40,23 +40,26 @@ public class Gacha : MonoBehaviour, Interactable
 
     void Gamble()
     {
-        Player.money -= 1000;
+        SaveObject.instance.money -= 1000;
         PlayerAudio.PlayOneShot(GamblingSound);
         int Result = Random.Range(1, 4);
         print(Result);
         if(Result == 1)
         {
-            pistol.WeaponLVL++;
+            SaveObject.instance.pistolLv++;
+            //pistol.WeaponLVL++;
             StartCoroutine(Icon(PistolSprite));
         }
         if (Result == 2)
         {
-            ak.WeaponLVL++;
+            SaveObject.instance.arLv++;
+            //ak.WeaponLVL++;
             StartCoroutine(Icon(AKSprite));
         }
         if (Result == 3)
         {
-            shotgun.WeaponLVL++;
+            SaveObject.instance.shotgunLv++;
+            //shotgun.WeaponLVL++;
             StartCoroutine(Icon(ShotgunSprite));
         }
 

@@ -17,7 +17,7 @@ public class Pistol : BaseWeapon
     void Update()
     {
         Debug.DrawRay(Cam.transform.position, Cam.transform.forward * Range);
-        if (WeaponLVL > 0 && WeaponActive == true && IsReloading == false && StopShoot == false)
+        if (SaveObject.instance.pistolLv > 0 && WeaponActive == true && IsReloading == false && StopShoot == false)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {

@@ -24,13 +24,13 @@ public class Debt : MonoBehaviour, Interactable
 
     public void Thing()
     {
-        if (Player.money >= 50000)
+        if (SaveObject.instance.money >= 50000)
         {
             DebtAmount = 0;
-            Player.money -= 50000;
+            SaveObject.instance.money -= 50000;
             GetComponent<TriggerStory>().StoryTrigger();
             timeSave.Save();
         }
-        Player.money = 0;
+        SaveObject.instance.money = 0;
     }
 }

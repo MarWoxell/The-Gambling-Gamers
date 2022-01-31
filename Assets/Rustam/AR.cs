@@ -15,7 +15,7 @@ public class AR : BaseWeapon
     // Update is called once per frame
     void Update()
     {
-        if (WeaponLVL > 0 && WeaponActive == true && IsReloading == false)
+        if (SaveObject.instance.arLv > 0 && WeaponActive == true && IsReloading == false)
         {
             if (Input.GetKey(KeyCode.Mouse0))
             {
@@ -44,7 +44,7 @@ public class AR : BaseWeapon
     }
     public override void DamageFormula()
     {
-        Damage = BaseDamage + (2 * (WeaponLVL - 1));
-        MagSize = 30 + 5 * (WeaponLVL - 1 );
+        Damage = BaseDamage + (2 * (SaveObject.instance.arLv - 1));
+        MagSize = 30 + 5 * (SaveObject.instance.arLv - 1 );
     }
 }

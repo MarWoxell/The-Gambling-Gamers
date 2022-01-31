@@ -320,6 +320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
+--- !u!82 &6226092 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1119756, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
+  m_PrefabInstance: {fileID: 6226091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &161603641
 GameObject:
   m_ObjectHideFlags: 0
@@ -4514,10 +4519,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Winnable: []
-  pistol: {fileID: 0}
-  ak: {fileID: 0}
-  shotgun: {fileID: 0}
-  PlayerAudio: {fileID: 0}
+  pistol: {fileID: 1850709093}
+  ak: {fileID: 1850709094}
+  shotgun: {fileID: 1850709092}
+  PlayerAudio: {fileID: 6226092}
   GamblingSound: {fileID: 8300000, guid: b01ed9d7df4c12c4494e1eed9515c5c2, type: 3}
   renderer1: {fileID: 548621962}
   renderer2: {fileID: 773014620}
@@ -4525,7 +4530,7 @@ MonoBehaviour:
   PistolSprite: {fileID: 21300000, guid: d2c934dbb4cbd08458d44203f4d9c00e, type: 3}
   AKSprite: {fileID: 21300000, guid: 04d39314e80bf8b4380763d01503b238, type: 3}
   ShotgunSprite: {fileID: 21300000, guid: 40655c1547c2d1e4f9a51ed3d7c85d92, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 1850709095}
 --- !u!65 &2042906260
 BoxCollider:
   m_ObjectHideFlags: 0
