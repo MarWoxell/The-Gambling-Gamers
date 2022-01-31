@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 7129518057773384061, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
   healthBar: {fileID: 0}
-  projectileSpeed: 30
+  projectileSpeed: 60
 --- !u!1 &8736559332808393337
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,4 +243,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a835d1508d8f0747ab25b0988bc2322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
+  cam: {fileID: 0}

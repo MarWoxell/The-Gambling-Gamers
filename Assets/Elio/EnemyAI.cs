@@ -9,8 +9,9 @@ public class EnemyAI : MonoBehaviour
     public NavMeshAgent agent;
     public Transform player;
     public EnemyHead head;
-    public GameObject enemy, projectilePrefab, moneyPrefab, healhtPrefab;
+    public GameObject enemy, projectilePrefab, moneyPrefab, healthPrefab;
     public PauseMenu pause;
+    public hpsliderscript healthbar;
     public int drops;
     float distance;
     private bool hasAttacked;
@@ -49,7 +50,7 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        drops = Random.Range(0, 1);
+        drops = Random.Range(0, 2);
         transform.LookAt(player);
         distance = Vector3.Distance(player.position, enemy.transform.position);
         //print(distance);
@@ -67,12 +68,13 @@ public class EnemyAI : MonoBehaviour
                 agent.destination = targetPosition;
             }
             agent.isStopped = true;
+            if(hasAttacked == false && pause.paused == false)
+            {
+            StartCoroutine(Attack());
+            }
         }
 
-        if(distance <= 20 && hasAttacked == false && pause.paused == false)
-        {
-            StartCoroutine(Attack());
-        }
+        
         if(hasAttacked == true && noDoubles == true && pause.paused == false)
         {
             //nextAttack = Time.deltaTime + cooldown;
@@ -81,9 +83,9 @@ public class EnemyAI : MonoBehaviour
 
         if (head.health <= 0)
         {
-            if(drops == 0 && Player.playerHealth < 100)
+            if(drops == 0 && healthbar.playerhp < 100)
             {
-                Instantiate(healhtPrefab, transform.position, transform.rotation);
+                Instantiate(healthPrefab, transform.position, transform.rotation);
             }
             else
             {

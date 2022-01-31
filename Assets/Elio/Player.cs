@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public static int playerHealth;
     public static int money;
     public int realMoney;
     public int maxHealth = 100;
@@ -18,7 +17,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerHealth = maxHealth;
+        healthBar.playerhp = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
     public void OnTriggerEnter(Collider other)
@@ -31,7 +30,7 @@ public class Player : MonoBehaviour
         }
         if (other.gameObject.tag == "HealthPack")
         {
-            playerHealth += 30;
+            healthBar.heal(30);
             Destroy(other.gameObject);
         }
     }
@@ -39,7 +38,7 @@ public class Player : MonoBehaviour
     {
         if (collision.collider.tag == "Projectile")
         {
-            playerHealth -= damage;
+            healthBar.playerhp -= damage;
             healthBar.takedamage(damage);
             print("HealthChange");
         }
@@ -50,7 +49,7 @@ public class Player : MonoBehaviour
     {
         
         print(money);
-        if (playerHealth <= 0)
+        if (healthBar.playerhp <= 0)
         {
             hpsliderscript.isDead = true;
             Time.timeScale = 0;
