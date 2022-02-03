@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     //Script by Elio
+    public Animator enemyAnimation;
     public NavMeshAgent agent;
     public Transform player;
     public EnemyHead head;
@@ -56,11 +57,13 @@ public class EnemyAI : MonoBehaviour
         //print(distance);
         if(distance >= 50)
         {
+            enemyAnimation.SetBool("If close", false);
             agent.isStopped = false;
             ChasePlayer();
         }
         else
         {
+            enemyAnimation.SetBool("If close", true);
             Vector3 toPlayer = player.transform.position - transform.position;
             if (Vector3.Distance(player.transform.position, transform.position) < 3)
             {

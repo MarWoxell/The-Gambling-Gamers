@@ -19590,7 +19590,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.83, y: 1.04}
+  m_Size: {x: 0.83, y: 1.03}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -22985,6 +22985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97dff0426ad4d394683c0bceb5dc0898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyAnimation: {fileID: 1959237707}
   agent: {fileID: 460525488455776326}
   player: {fileID: 7129518057772406593}
   head: {fileID: 1410948162}
