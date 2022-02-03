@@ -10,13 +10,23 @@ public class Player : MonoBehaviour
     public int maxHealth = 100;
     public int moneyAmount;
     public int damage = 10;
-    
+    public bool invincibility;
+
     public hpsliderscript healthBar; 
     public AudioSource PlayerAudio;
     public AudioClip PickupSound;
+    public AudioClip OuchSound;
+
+    IEnumerator InvincibilityFrame()
+    {
+        invincibility = true;
+        yield return new WaitForSecondsRealtime(1.5f);
+        invincibility = false;
+    }
     // Start is called before the first frame update
     void Start()
     {
+        invincibility = false;
         healthBar.playerhp = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
@@ -36,10 +46,12 @@ public class Player : MonoBehaviour
     }
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Projectile")
+        if (collision.collider.tag == "Projectile" && invincibility == false)
         {
             healthBar.playerhp -= damage;
             healthBar.takedamage(damage);
+            PlayerAudio.PlayOneShot(OuchSound);
+            StartCoroutine(InvincibilityFrame());
             print("HealthChange");
         }
     }

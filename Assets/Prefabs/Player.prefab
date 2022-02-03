@@ -362,9 +362,11 @@ MonoBehaviour:
   maxHealth: 100
   moneyAmount: 100
   damage: 10
+  invincibility: 0
   healthBar: {fileID: 0}
   PlayerAudio: {fileID: 1119756}
   PickupSound: {fileID: 8300000, guid: fdab8851a0707b44db0fceeea5d29e93, type: 3}
+  OuchSound: {fileID: 8300000, guid: 3a5b2aac180a2d744befd951be6898d4, type: 3}
 --- !u!114 &3583718296038312401
 MonoBehaviour:
   m_ObjectHideFlags: 0
