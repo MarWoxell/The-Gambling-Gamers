@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Debt : MonoBehaviour, Interactable
 {
-    public int DebtAmount = 50000;
+    public int DebtAmount = 500;
     public TimeSave timeSave;
 
 
@@ -24,10 +24,12 @@ public class Debt : MonoBehaviour, Interactable
 
     public void Thing()
     {
-        if (SaveObject.instance.money >= 50000)
+        if (SaveObject.instance.money >= 500)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 1;
             DebtAmount = 0;
-            SaveObject.instance.money -= 50000;
+            SaveObject.instance.money -= 500;
             GetComponent<TriggerStory>().StoryTrigger();
             timeSave.Save();
         }
