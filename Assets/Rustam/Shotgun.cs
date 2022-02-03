@@ -97,6 +97,16 @@ public class Shotgun : BaseWeapon
         }
 
     }
+    public override IEnumerator Animation()
+    {
+        yield return null;
+        WeaponRenderer.sprite = FireSprite;
+        yield return new WaitForSeconds(0.5f);
+        if (WeaponManager.shotgun.WeaponActive == true)
+        {
+            WeaponRenderer.sprite = IdleSprite;
+        }
+    }
     public override void DamageFormula()
     {
         Damage = BaseDamage + (2 * (SaveObject.instance.shotgunLv - 1));

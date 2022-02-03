@@ -47,4 +47,14 @@ public class AR : BaseWeapon
         Damage = BaseDamage + (2 * (SaveObject.instance.arLv - 1));
         MagSize = 30 + 5 * (SaveObject.instance.arLv - 1 );
     }
+    public override IEnumerator Animation()
+    {
+        yield return null;
+        WeaponRenderer.sprite = FireSprite;
+        yield return new WaitForSeconds(0.5f);
+        if (WeaponManager.ak.WeaponActive == true)
+        {
+            WeaponRenderer.sprite = IdleSprite;
+        }
+    }
 }

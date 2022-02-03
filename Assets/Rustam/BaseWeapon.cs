@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class BaseWeapon : MonoBehaviour
 {
+    public WeaponsMaster WeaponManager;
+
     public AudioClip ShootSound;
     public AudioClip ReloadSound;
     public AudioSource audioSource;
@@ -53,7 +55,7 @@ public class BaseWeapon : MonoBehaviour
           if(Ammo > 0)
             {
                 audioSource.PlayOneShot(ShootSound);
-                StartCoroutine(Animation());
+                this.StartCoroutine(Animation());
                 TrailRenderer Trail = Instantiate(BulletTrail, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
                 GameObject Light = Instantiate(LightSource, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
                 Light.transform.parent = Trail.transform;
@@ -96,8 +98,9 @@ public class BaseWeapon : MonoBehaviour
         Ammo = MagSize;
         IsReloading = false;
     }
-    public IEnumerator Animation()
+    public virtual IEnumerator Animation()
     {
+        print("normal");
         yield return null;
         WeaponRenderer.sprite = FireSprite;
         yield return new WaitForSeconds(0.5f);

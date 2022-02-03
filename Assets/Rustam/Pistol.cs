@@ -31,10 +31,10 @@ public class Pistol : BaseWeapon
         }
         DamageFormula();
     }
-    public override void Fire()
+   /* public override void Fire()
     {
         base.Fire();
-    }
+    }*/
     IEnumerator FirePause()
     {
         print("Stopshotting");
@@ -49,5 +49,21 @@ public class Pistol : BaseWeapon
     public override void DamageFormula()
     {
         base.DamageFormula();
+    }
+
+    public override IEnumerator Animation()
+    {
+        yield return null;
+        WeaponRenderer.sprite = FireSprite;
+        yield return new WaitForSeconds(0.5f);
+        if(WeaponManager.pistol.WeaponActive == true)
+        {
+            WeaponRenderer.sprite = IdleSprite;
+            print("is pistol rn");
+        }    
+        else
+        {
+            print("not pistol rn");
+        }
     }
 }

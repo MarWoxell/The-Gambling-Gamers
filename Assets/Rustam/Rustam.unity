@@ -301,6 +301,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131953840}
   m_CullTransparentMesh: 1
+--- !u!114 &179153829 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9048265360340734370, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
+  m_PrefabInstance: {fileID: 1027695312}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 665d6b733463ec24dbc25a6ecedd68d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &367865555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1060,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 655264160}
     - target: {fileID: 394077923090774711, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
+      propertyPath: WeaponManager
+      value: 
+      objectReference: {fileID: 179153829}
+    - target: {fileID: 394077923090774711, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
       propertyPath: WeaponRenderer
       value: 
       objectReference: {fileID: 1810129692}
@@ -1056,6 +1071,10 @@ PrefabInstance:
       propertyPath: ReloadText
       value: 
       objectReference: {fileID: 655264160}
+    - target: {fileID: 3583718296038312401, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
+      propertyPath: WeaponManager
+      value: 
+      objectReference: {fileID: 179153829}
     - target: {fileID: 3583718296038312401, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
       propertyPath: WeaponRenderer
       value: 
@@ -1064,6 +1083,10 @@ PrefabInstance:
       propertyPath: ReloadText
       value: 
       objectReference: {fileID: 655264160}
+    - target: {fileID: 6375910999618965496, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
+      propertyPath: WeaponManager
+      value: 
+      objectReference: {fileID: 179153829}
     - target: {fileID: 6375910999618965496, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
       propertyPath: WeaponRenderer
       value: 
