@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering.PostProcessing;
 
 public class Player : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
     public int damage = 10;
     public bool invincibility;
 
+    public Vignette vignette;
     public hpsliderscript healthBar; 
     public AudioSource PlayerAudio;
     public AudioClip PickupSound;
