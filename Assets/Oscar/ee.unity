@@ -2126,8 +2126,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a32c137fcbf16d409921b693d838886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotatePoint: {x: -35, y: -15, z: 0}
-  RotateSpeed: -65
+  RotatePoint: {x: -35, y: -15, z: -5}
+  MinSpeed: 20
+  MaxSpeed: 80
+  RotateSpeed: 0
+  IsNegative: 1
 --- !u!4 &230385293
 Transform:
   m_ObjectHideFlags: 0
@@ -9094,8 +9097,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a32c137fcbf16d409921b693d838886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotatePoint: {x: -35, y: -15, z: 0}
-  RotateSpeed: 30
+  RotatePoint: {x: -35, y: -15, z: -5}
+  MinSpeed: 20
+  MaxSpeed: 80
+  RotateSpeed: 0
+  IsNegative: 0
 --- !u!4 &880553650
 Transform:
   m_ObjectHideFlags: 0
@@ -20372,8 +20378,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a32c137fcbf16d409921b693d838886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotatePoint: {x: 35, y: -15, z: 0}
-  RotateSpeed: -35
+  RotatePoint: {x: 35, y: -15, z: -5}
+  MinSpeed: 20
+  MaxSpeed: 80
+  RotateSpeed: 0
+  IsNegative: 0
 --- !u!4 &2012826482
 Transform:
   m_ObjectHideFlags: 0
@@ -36393,8 +36402,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a32c137fcbf16d409921b693d838886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotatePoint: {x: 35, y: -15, z: 0}
-  RotateSpeed: 50
+  RotatePoint: {x: 35, y: -15, z: -5}
+  MinSpeed: 20
+  MaxSpeed: 80
+  RotateSpeed: 0
+  IsNegative: 1
 --- !u!4 &8661005569655913728
 Transform:
   m_ObjectHideFlags: 0
