@@ -1108,7 +1108,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291378039}
-  m_Text: Gatch
+  m_Text: Gach
   m_OffsetZ: 0
   m_CharacterSize: 0.24
   m_LineSpacing: 1
@@ -3987,7 +3987,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 248d52e19679e014c83d2a8b627352cc, type: 2}
     - target: {fileID: 919132149155446097, guid: c8268cbbb1839984fa48924b34316dc2, type: 3}
       propertyPath: m_Name
-      value: 1000 Coins To Spin
+      value: 1000 Coins To Spin for mony
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c8268cbbb1839984fa48924b34316dc2, type: 3}
       propertyPath: m_Layer
@@ -5842,7 +5842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 07a8deae1cf860845b38c0cd635af799, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.4
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 07a8deae1cf860845b38c0cd635af799, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5954,7 +5954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 07a8deae1cf860845b38c0cd635af799, type: 3}
       propertyPath: m_Name
-      value: 1000 Coins To Spin
+      value: 1000 Coins To Spin for guns
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 07a8deae1cf860845b38c0cd635af799, type: 3}
       propertyPath: m_Layer

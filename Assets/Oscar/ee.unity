@@ -308,6 +308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &46768608 stripped
@@ -394,6 +398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &50724146 stripped
@@ -480,6 +488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &57292028 stripped
@@ -712,6 +724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &64529853 stripped
@@ -798,6 +814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &80059562 stripped
@@ -889,6 +909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &118414205 stripped
@@ -975,6 +999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &121659073 stripped
@@ -1061,6 +1089,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &128405972 stripped
@@ -1147,6 +1187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &153568426 stripped
@@ -1542,6 +1586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &176228484 stripped
@@ -1628,6 +1676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &191515756 stripped
@@ -1737,6 +1789,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &200203494 stripped
@@ -1823,6 +1887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &208027189 stripped
@@ -2009,6 +2077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &226867264 stripped
@@ -2225,6 +2297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &233617348 stripped
@@ -2311,6 +2387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &236855939 stripped
@@ -2397,6 +2477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &244914645 stripped
@@ -2483,6 +2567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &251577804 stripped
@@ -2743,6 +2831,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &295955415 stripped
@@ -2891,6 +2991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &322174725 stripped
@@ -2977,6 +3081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &325810124 stripped
@@ -3163,6 +3271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &329313563 stripped
@@ -3249,6 +3361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &336356122 stripped
@@ -3335,6 +3451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &337518619 stripped
@@ -3514,6 +3634,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &354205934 stripped
@@ -3831,6 +3963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &376378267 stripped
@@ -3917,6 +4053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &377469226 stripped
@@ -4003,6 +4143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &378749155 stripped
@@ -4089,6 +4233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &385530810 stripped
@@ -4308,6 +4456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &396955831 stripped
@@ -4463,6 +4615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1001 &414339289
@@ -4544,6 +4700,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &414339290 stripped
@@ -4630,6 +4798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &414656802 stripped
@@ -4716,6 +4888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &415251176 stripped
@@ -4897,6 +5073,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &418932265 stripped
@@ -5044,6 +5232,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &441793373 stripped
@@ -5209,6 +5409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &465633924 stripped
@@ -5381,6 +5585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &521558572 stripped
@@ -5637,6 +5845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1001 &551642468
@@ -5718,6 +5930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &551642469 stripped
@@ -5809,6 +6025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &567960951 stripped
@@ -5895,6 +6115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &572395510 stripped
@@ -6094,6 +6318,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &589783885 stripped
@@ -6264,6 +6500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &612138794 stripped
@@ -6350,6 +6590,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &613841746 stripped
@@ -6436,6 +6688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1001 &631051077
@@ -6517,6 +6773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &631051078 stripped
@@ -6675,6 +6935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1 &659279465
@@ -6864,6 +7128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &671904262 stripped
@@ -6950,6 +7218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &689722188 stripped
@@ -7036,6 +7308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &707339830 stripped
@@ -7203,6 +7479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &740150271 stripped
@@ -7289,6 +7569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &762345918 stripped
@@ -7612,6 +7896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &770293333 stripped
@@ -7698,6 +7986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &780709825 stripped
@@ -7784,6 +8076,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &782234936 stripped
@@ -8125,6 +8429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &807422566 stripped
@@ -8292,6 +8600,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &819345769 stripped
@@ -8378,6 +8698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &823710399 stripped
@@ -8464,6 +8788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &829880587 stripped
@@ -8550,6 +8878,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &839784536 stripped
@@ -8803,6 +9135,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &853287764 stripped
@@ -8889,6 +9233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &854217723 stripped
@@ -8975,6 +9323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &872862085 stripped
@@ -9061,6 +9413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &877391432 stripped
@@ -9270,6 +9626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1001 &909002992
@@ -9351,6 +9711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &909002993 stripped
@@ -9652,6 +10016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1001 &980054279
@@ -9733,6 +10101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &980054280 stripped
@@ -9819,6 +10191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1003945109 stripped
@@ -9977,6 +10353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1016436069 stripped
@@ -10340,6 +10720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1054601605 stripped
@@ -10426,6 +10810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1057953136 stripped
@@ -10512,6 +10900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1068596535 stripped
@@ -10693,6 +11085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1083355162 stripped
@@ -10779,6 +11175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1083546212 stripped
@@ -10865,6 +11265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1 &1103587838
@@ -11081,6 +11485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1114570362 stripped
@@ -11332,6 +11740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1149389686 stripped
@@ -11527,6 +11939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1166439659 stripped
@@ -11708,6 +12124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1170008183 stripped
@@ -12265,6 +12685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1 &1234657239
@@ -12437,6 +12861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1259339309 stripped
@@ -12658,6 +13086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1263953214 stripped
@@ -12744,6 +13176,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1264764226 stripped
@@ -12830,6 +13274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1282091688 stripped
@@ -12916,6 +13364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1290617545 stripped
@@ -13002,6 +13454,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1292617429 stripped
@@ -13088,6 +13552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1299088129 stripped
@@ -13371,6 +13839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1313029393 stripped
@@ -13457,6 +13929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1313612434 stripped
@@ -13543,6 +14019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1314558140 stripped
@@ -13710,6 +14190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1332546241 stripped
@@ -13796,6 +14280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1335042042 stripped
@@ -13882,6 +14370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1001 &1359559381
@@ -13963,6 +14455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1359559382 stripped
@@ -14097,6 +14593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1365401648 stripped
@@ -14276,6 +14776,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1382491214 stripped
@@ -14362,6 +14874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1392541488 stripped
@@ -14558,6 +15074,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1424048577 stripped
@@ -14797,6 +15317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1001 &1456459805
@@ -14878,6 +15402,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1456459806 stripped
@@ -15036,6 +15572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1462606616 stripped
@@ -15266,6 +15806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1477023284 stripped
@@ -15352,6 +15896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1480706894 stripped
@@ -15438,6 +15986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1481239845 stripped
@@ -15704,6 +16256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1553795925 stripped
@@ -15998,6 +16554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1580803946 stripped
@@ -16084,6 +16644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1606109669 stripped
@@ -16249,6 +16813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1654742282 stripped
@@ -16335,6 +16903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1 &1678926111
@@ -16883,6 +17455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1737734491 stripped
@@ -16969,6 +17545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1001 &1753012139
@@ -17050,6 +17630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1753012140 stripped
@@ -17136,6 +17720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1766877616 stripped
@@ -17222,6 +17810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!224 &1782002250 stripped
@@ -17353,6 +17945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1796543606 stripped
@@ -17706,6 +18302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1824733799 stripped
@@ -17792,6 +18392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1001 &1825960836
@@ -17873,6 +18477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1825960837 stripped
@@ -18031,6 +18639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1836719551 stripped
@@ -18280,6 +18892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1845972515 stripped
@@ -18461,6 +19077,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1852037462 stripped
@@ -18687,6 +19315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1883873031 stripped
@@ -18873,6 +19505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1907569097 stripped
@@ -19038,6 +19674,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1938766636 stripped
@@ -19124,6 +19772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1941883043 stripped
@@ -19210,6 +19862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1943428311 stripped
@@ -19458,6 +20114,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1953710285 stripped
@@ -19742,6 +20410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1977802069 stripped
@@ -19894,6 +20566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &1989053216 stripped
@@ -19980,6 +20656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2000320606 stripped
@@ -20066,6 +20746,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2001678176 stripped
@@ -20390,6 +21074,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2007003583 stripped
@@ -20525,6 +21213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2014526356 stripped
@@ -20611,6 +21303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1 &2025062994
@@ -20832,6 +21528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2042285446 stripped
@@ -20918,6 +21618,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2049728143 stripped
@@ -21004,6 +21716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2050042612 stripped
@@ -21090,6 +21806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2053633813 stripped
@@ -21176,6 +21896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2057984544 stripped
@@ -21262,6 +21986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2059036110 stripped
@@ -21348,6 +22076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2062155360 stripped
@@ -21680,6 +22412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2085470261 stripped
@@ -21766,6 +22502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2089132356 stripped
@@ -21852,6 +22592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &2090890578 stripped
@@ -22017,6 +22761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!1 &2142487102
@@ -22177,6 +22925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HumanHandsup Variant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3894538512507045047, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e91d9f720078ca4498b0324538387a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6bc67a935cbe824cb0ce534dd8ad708, type: 3}
 --- !u!4 &11156096152887692
