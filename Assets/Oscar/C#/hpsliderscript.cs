@@ -83,15 +83,21 @@ public class hpsliderscript : MonoBehaviour
     {// när du dör så fins det en knap för när man vil kör om 
 
 
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("ee");
 
     }
     public void Menu()
     {// går till back atill menu
 
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Markus");
 
+    }
+
+    public void Hub()
+        // går till hubben
+    {
+        SceneManager.LoadScene("Oscar");
     }
 
 }
