@@ -10,7 +10,8 @@ public class Pistol : BaseWeapon
     {
 
 
-        Ammo = MagSize;
+        base.Start();
+
     }
 
     // Update is called once per frame
@@ -27,6 +28,7 @@ public class Pistol : BaseWeapon
             if (Input.GetKeyDown(KeyCode.R))
             {
                 StartCoroutine(Reload());
+                print("r");
             }
         }
         DamageFormula();

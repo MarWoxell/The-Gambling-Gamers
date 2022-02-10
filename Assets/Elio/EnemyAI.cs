@@ -11,6 +11,7 @@ public class EnemyAI : MonoBehaviour
     public Transform player;
     public EnemyHead head;
     public GameObject enemy, projectilePrefab, moneyPrefab, healthPrefab;
+    public GameObject Blood;
     public PauseMenu pause;
     public hpsliderscript healthbar;
     public int drops;
@@ -86,7 +87,8 @@ public class EnemyAI : MonoBehaviour
 
         if (head.health <= 0)
         {
-            if(drops == 0 && healthbar.playerhp < 100)
+            Instantiate(Blood, transform.position, transform.rotation);
+            if (drops == 0 && healthbar.playerhp < 100)
             {
                 Instantiate(healthPrefab, transform.position, transform.rotation);
             }

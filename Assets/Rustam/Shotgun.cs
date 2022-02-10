@@ -10,7 +10,7 @@ public class Shotgun : BaseWeapon
     void Start()
     {
 
-        Ammo = MagSize;
+        base.Start();
     }
 
     // Update is called once per frame

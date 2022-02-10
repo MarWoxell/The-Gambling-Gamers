@@ -33,9 +33,11 @@ public class BaseWeapon : MonoBehaviour
     public Text ReloadText;
 
     // Start is called before the first frame update
-    void Start()
+    public virtual void Start()
     {
         Ammo = MagSize;
+
+        WeaponManager = GetComponent<WeaponsMaster>();
     }
 
     // Update is called once per frame
@@ -90,7 +92,7 @@ public class BaseWeapon : MonoBehaviour
     {
         IsReloading = true;
         Ammo = 0;
-        yield return null;
+        print("Reloading");
         ReloadText.text = "Reloading...";
         audioSource.PlayOneShot(ReloadSound);
         yield return new WaitForSeconds(Reloadtime);
