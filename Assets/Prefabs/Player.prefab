@@ -363,6 +363,8 @@ MonoBehaviour:
   moneyAmount: 100
   damage: 10
   invincibility: 0
+  volume: {fileID: 0}
+  vignetteIntensity: 0
   healthBar: {fileID: 0}
   PlayerAudio: {fileID: 1119756}
   PickupSound: {fileID: 8300000, guid: fdab8851a0707b44db0fceeea5d29e93, type: 3}
@@ -379,6 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd257e27ce299aa4a814f5283b35977f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponManager: {fileID: 0}
   ShootSound: {fileID: 8300000, guid: 452a6174ca79680489e67893bde1710d, type: 3}
   ReloadSound: {fileID: 8300000, guid: 59a1e8d6089326641bb4070ecf23ed8d, type: 3}
   audioSource: {fileID: 1119756}
@@ -415,6 +418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c2468228633e854a815f7c38285f0f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponManager: {fileID: 0}
   ShootSound: {fileID: 8300000, guid: 0141eaa3ee6235143a608d9fe21f357e, type: 3}
   ReloadSound: {fileID: 8300000, guid: 891073b8802479d42b8eaeeb88363687, type: 3}
   audioSource: {fileID: 1119756}
@@ -451,6 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb9d125d471a4b4aafd3a95ccd81a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponManager: {fileID: 0}
   ShootSound: {fileID: 8300000, guid: b61e5970ad690ca4ba8d03cbe990c2aa, type: 3}
   ReloadSound: {fileID: 8300000, guid: 239636bb0daf5d949b3bf17c0e51e5c7, type: 3}
   audioSource: {fileID: 1119756}

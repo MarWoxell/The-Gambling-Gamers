@@ -11,9 +11,15 @@ public class Player : MonoBehaviour
     public int maxHealth = 100;
     public int moneyAmount;
     public int damage = 10;
+    public float maxVignette = 0.7f;
+    public float minVignette = 0.4f;
+    public float interpolationPoint;
     public bool invincibility;
+    public bool vignetteGoUp;
 
-    public Vignette vignette;
+    public PostProcessVolume volume;
+    Vignette vignette;
+    public float vignetteIntensity;
     public hpsliderscript healthBar; 
     public AudioSource PlayerAudio;
     public AudioClip PickupSound;
@@ -22,12 +28,16 @@ public class Player : MonoBehaviour
     IEnumerator InvincibilityFrame()
     {
         invincibility = true;
-        yield return new WaitForSecondsRealtime(1.5f);
+        vignetteGoUp = true;
+        yield return new WaitForSecondsRealtime(1);
+        vignetteGoUp = false;
+        yield return new WaitForSecondsRealtime(1);
         invincibility = false;
     }
     // Start is called before the first frame update
     void Start()
     {
+        vignette = volume.profile.GetSetting<Vignette>();
         invincibility = false;
         healthBar.playerhp = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
@@ -54,14 +64,29 @@ public class Player : MonoBehaviour
             healthBar.takedamage(damage);
             PlayerAudio.PlayOneShot(OuchSound);
             StartCoroutine(InvincibilityFrame());
-            print("HealthChange");
         }
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        interpolationPoint = Mathf.Clamp(interpolationPoint, 0, 1);
+        vignette.intensity.value = vignetteIntensity;
+        vignetteIntensity = Mathf.Lerp(minVignette, maxVignette, interpolationPoint);
         
+        if(invincibility == true && vignetteIntensity <= 0.7f && vignetteIntensity >= 0.4f)
+        {
+            if(vignetteGoUp == true)
+            {
+                print("What");
+                interpolationPoint += 0.2f;
+            }
+            if(vignetteGoUp == false)
+            {
+                interpolationPoint -= 0.08f;
+            }
+        }
+
         print(SaveObject.instance.money);
         if (healthBar.playerhp <= 0)
         {
