@@ -8,22 +8,34 @@ public class bobing : MonoBehaviour
     public Vector3 Startposition;
     public float Speed;
     public float Distance;
-    public float Apex;
+    float Delay;
+    bool DelayOver = false;
+    float StartPoint;
     // Start is called before the first frame update
     void Start()
     {
         Startposition = transform.position;
+        Delay = Random.Range(0, 4f);
+        StartCoroutine(Bobwait());
+        StartPoint = Random.Range(-3, 3);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Bob();
-        //Kallar på voiden varje frame.
+        if (DelayOver == true)
+        {
+            Bob();
+        }
     }
     public virtual void Bob()
     {
-        transform.position = Startposition + new Vector3(0f, Mathf.Sin(Speed * Time.time) * Distance, 0f);
+        transform.position = Startposition + new Vector3(0f, Mathf.Sin( StartPoint +Speed * Time.time) * Distance, 0f);
         //Adderar en sinusvåg upp och ner i y positionen i en sinusvåg till startpositionen.
+    }
+    IEnumerator Bobwait()
+    {
+        yield return new WaitForSeconds(Delay);
+        DelayOver = true;
     }
 }
