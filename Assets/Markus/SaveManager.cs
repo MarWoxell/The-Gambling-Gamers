@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class SaveManager : MonoBehaviour
 {
-    // sätt in saker i editor (sakerna där datan finns)
+   /* // sätt in saker i editor (sakerna där datan finns)
     public TimeSave time;
     public AR ar;
     public Shotgun sg;
@@ -42,6 +42,6 @@ public class SaveManager : MonoBehaviour
         {
             print("There is no save data!");
         }
-    }
+    }*/
 
 }

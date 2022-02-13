@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public SaveData save;
     private void Start()
     {
         Cursor.lockState = CursorLockMode.None;
@@ -19,6 +20,7 @@ public class MainMenu : MonoBehaviour
 
     public void Quit()
     {
+        save.SavePlayer();
         Application.Quit();
         // avslutar spelet
     }

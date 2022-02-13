@@ -15,6 +15,8 @@ public class TimeSave : MonoBehaviour
 
     public Text bestScore;
 
+    public SaveData test;
+
 
     void Start()
     {
@@ -48,15 +50,19 @@ public class TimeSave : MonoBehaviour
     // Resetar tiden i menyn
     public void resetTime()
     {
-        GetComponent<Pistol>().WeaponLVL = 1;
-        GetComponent<Shotgun>().WeaponLVL = 0;
-        GetComponent<AR>().WeaponLVL = 0;
-        GetComponent<Player>().moneyAmount = 0;
+
+        SaveObject.instance.pistolLv = 1;
+        SaveObject.instance.arLv = 0;
+        SaveObject.instance.shotgunLv = 0;
+        SaveObject.instance.money = 0;
+        SaveObject.instance.time = 0;
 
         time = 0;
         PlayerPrefs.SetFloat("time", 0);
         bestScore.text = "Your Best Time " + time;
 
-        GetComponent<SaveManager>().SaveGame();
+        test.SavePlayer();
+
+
     }
 }

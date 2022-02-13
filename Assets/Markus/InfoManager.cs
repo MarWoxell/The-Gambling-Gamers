@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class InfoManager : MonoBehaviour
 {
+    public SaveData save;
+
     // är saker för ljud
 
     //public AudioSource AudioSource;
@@ -73,10 +75,12 @@ public class InfoManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Oscar")) 
         {
+            save.SavePlayer();
             SceneManager.LoadScene("Markus");
         }
         else
         {
+            save.LoadGame();
             SceneManager.LoadScene("ee");
         }
         

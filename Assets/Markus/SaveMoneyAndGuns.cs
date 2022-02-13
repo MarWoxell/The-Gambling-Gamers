@@ -12,6 +12,8 @@ public class SaveMoneyAndGuns
     public int shotgun;
     public float time;
 
+
+    /*
     public SaveMoneyAndGuns (TimeSave timeSave, AR aR, Shotgun sg, Pistol handgun, Player cash)
     {
         time = timeSave.time;
@@ -19,5 +21,13 @@ public class SaveMoneyAndGuns
         shotgun = sg.WeaponLVL;
         pistol = handgun.WeaponLVL;
         money = cash.realMoney;
-    }
+    }*/
+
+  /*  public SaveMoneyAndGuns (SaveObject saveObject)
+    {
+        
+
+    }*/
+
+
 }

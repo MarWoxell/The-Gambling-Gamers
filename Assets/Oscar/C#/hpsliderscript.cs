@@ -17,6 +17,8 @@ public class hpsliderscript : MonoBehaviour
 
     public GameObject deadoverlay;
 
+    public SaveData save;
+
 
    
     private void Start()
@@ -89,7 +91,7 @@ public class hpsliderscript : MonoBehaviour
     public void Menu()
     {// går till back atill menu
 
-
+        save.SavePlayer();
         SceneManager.LoadScene("Markus");
 
     }
