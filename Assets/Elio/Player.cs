@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.PostProcessing;
-
+//Script by Elio
 public class Player : MonoBehaviour
 {
     //public static int money;
@@ -15,11 +15,11 @@ public class Player : MonoBehaviour
     public float minVignette = 0.4f;
     public float interpolationPoint;
     public bool invincibility;
+    public float vignetteIntensity;
     public bool vignetteGoUp;
 
     public PostProcessVolume volume;
     Vignette vignette;
-    public float vignetteIntensity;
     public hpsliderscript healthBar; 
     public AudioSource PlayerAudio;
     public AudioClip PickupSound;
@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
 
     IEnumerator InvincibilityFrame()
     {
+        //Makes the player invincible and turns the vignette up, waits for one second, then makes vignette start to go down, then waits for one second, then turns off invincibility
         invincibility = true;
         vignetteGoUp = true;
         yield return new WaitForSecondsRealtime(1);
@@ -44,20 +45,24 @@ public class Player : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
+        //If the player touches money then money will go up and a pickup sound will be played, then the money object is destroyed
         if (other.gameObject.tag == "Money")
         {
             SaveObject.instance.money += moneyAmount;
             PlayerAudio.PlayOneShot(PickupSound);
             Destroy(other.gameObject);
         }
+        //If the player touches a healthpack then health will go up and a pickup sound will be played, then the healthpack object is destroyed
         if (other.gameObject.tag == "HealthPack")
         {
             healthBar.heal(30);
+            PlayerAudio.PlayOneShot(PickupSound);
             Destroy(other.gameObject);
         }
     }
     public void OnCollisionEnter(Collision collision)
     {
+        //If the player gets hit by a projectile while they aren't invincible then they take damage, their healthbar is lowered, they say ouch  and becomes invincible
         if (collision.collider.tag == "Projectile" && invincibility == false)
         {
             healthBar.playerhp -= damage;

@@ -72,24 +72,25 @@ public class EnemyAI : MonoBehaviour
         {
             //If there isn't a 50 Unity Unit distance between the player and the enemy then the enemy stands still and stops it's animation
             enemyAnimation.SetBool("If close", true);
-            Vector3 toPlayer = player.transform.position - transform.position;
+           
             if (Vector3.Distance(player.transform.position, transform.position) < 7)
             {
-                print("!");
-                Vector3 targetPosition = toPlayer.normalized * -50f;
+                //Makes the enemy quickly back away if you get too close 
+                Vector3 toPlayer = player.transform.position - transform.position;
+                Vector3 targetPosition = transform.position + toPlayer.normalized * -50f;
                 agent.isStopped = false;
                 agent.speed = 100;
                 agent.SetDestination(targetPosition);
             }
             if (distance >= 7 && distance <= 50)
             {
-                print("?");
+                //Will stand still if you're not to close, nor too far away
                 agent.isStopped = true;
             }
             //Attacks the player if the game isn't paused and hasn't attacked
             if (hasAttacked == false && pause.paused == false)
             {
-            Attack();
+                Attack();
             }
         }
 

@@ -15,6 +15,7 @@ public class LookAtCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Will make the sprite always look at the camera and if it doesn't know what camera is it will find the camera
         if (cam != null)
         {
             transform.LookAt(cam.transform, Vector3.up);

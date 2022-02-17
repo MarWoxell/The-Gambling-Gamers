@@ -6,15 +6,12 @@ public class Projectile : MonoBehaviour
 {
     //Script by Elio
     public GameObject player;
-    public HealthBar healthBar;
     public float projectileSpeed;
 
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == "Player")
         {
-            /*Player.playerHealth -= 10;
-            healthBar.ChangeHealth(Player.playerHealth);*/
             Destroy(this.gameObject);
         }
     }
