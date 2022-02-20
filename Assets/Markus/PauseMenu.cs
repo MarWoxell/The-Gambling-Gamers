@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// Skrivet av Markus
+
 public class PauseMenu : MonoBehaviour
 {
     public bool paused = false;
@@ -14,20 +16,21 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
-        print("loded maby");
+        print("loded mabye");
         paused = false;
         pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
     }
+
+    // Kollar ifall spelet är pausat och ifall man lever
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && hpsliderscript.isDead == false)
         {
             if (paused == false)
             {
-                //set active true
-
+               
                 Time.timeScale = 0;
                 pauseMenu.SetActive(true);
                 paused = true;
@@ -35,7 +38,6 @@ public class PauseMenu : MonoBehaviour
             }
             else
             {
-                // set active false
                 Time.timeScale = 1;
                 pauseMenu.SetActive(false);
                 paused = false;
@@ -44,6 +46,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    // De fyra funktioner är knappar som finns i paus menyn
     public void Resume()
     {
         Time.timeScale = 1;

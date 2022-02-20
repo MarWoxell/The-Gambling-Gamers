@@ -2,34 +2,32 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
+// Skivet av Markus
+
 public class SaveData : MonoBehaviour
 {
 
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             SavePlayer();
         }
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.N))
         {
             LoadGame();
         }
     }
 
-    // fungerar men har inte acces till filerna
+
+
+    // Converterar data till binär
     public void SavePlayer()
     {
         BinaryFormatter formatter = GetBinaryFormatter();
 
-        /*
-        if (!Directory.Exists(Application.persistentDataPath + "/saves"))
-        {
-            Directory.CreateDirectory(Application.persistentDataPath + "/saves");
-        }
 
-        string path = Application.persistentDataPath + "/saves";
-        */
         FileStream file = File.Create(Application.persistentDataPath + "Markus.W");
         SaveMoneyAndGuns save = new SaveMoneyAndGuns();
 
@@ -43,6 +41,7 @@ public class SaveData : MonoBehaviour
         file.Close();
     }
 
+    // converterar binär till data
     public void LoadGame()
     {
         if (File.Exists(Application.persistentDataPath +"Markus.W"))

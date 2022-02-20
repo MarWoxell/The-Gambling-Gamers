@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class TimeSave : MonoBehaviour
 {
     // Skrivet av Markus
-    public float time;
 
     public float betterTime;
 
@@ -20,34 +19,49 @@ public class TimeSave : MonoBehaviour
 
     void Start()
     {
-        betterTime = PlayerPrefs.GetFloat("time", time);
+        betterTime = PlayerPrefs.GetFloat("time", SaveObject.instance.time);
         bestScore.text = "Your Best Time " + betterTime.ToString("F2");
     }
+
+    private void Awake()
+    {
+        betterTime = PlayerPrefs.GetFloat("time", SaveObject.instance.time);
+        print("it not the thing");
+        bestScore.text = "Your Best Time " + betterTime.ToString("F2");
+        print("it do the thing");
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
+        if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Markus"))
+        {
+            SaveObject.instance.time += Time.deltaTime;
+        }
+        
 
-        timer.text = "Time " + time.ToString("F2");
+        timer.text = "Time " + SaveObject.instance.time.ToString("F2");
     }
 
     // Sparar tiden och kollar ifall man är snabbare och ifall det är ens första run
     public void Save()
     {
-        if (time < betterTime)
+        if (SaveObject.instance.time < betterTime)
         {
-            PlayerPrefs.SetFloat("time", time);
+            PlayerPrefs.SetFloat("time", SaveObject.instance.time);
+            print("time does studd");
         }
         else if (betterTime == 0f)
         {
-            PlayerPrefs.SetFloat("time", time);
+            PlayerPrefs.SetFloat("time", SaveObject.instance.time);
+            print("saves times");
         }
 
         SceneManager.LoadScene("MainMenu");
     }
 
-    // Resetar tiden i menyn
+    // Resetar data i menyn
     public void resetTime()
     {
 
@@ -57,9 +71,9 @@ public class TimeSave : MonoBehaviour
         SaveObject.instance.money = 0;
         SaveObject.instance.time = 0;
 
-        time = 0;
         PlayerPrefs.SetFloat("time", 0);
-        bestScore.text = "Your Best Time " + time;
+        bestScore.text = "Your Best Time " + SaveObject.instance.time;
+        print("happening");
 
         test.SavePlayer();
 

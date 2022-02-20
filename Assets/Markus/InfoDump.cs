@@ -6,7 +6,7 @@ using UnityEngine;
     [System.Serializable]
 public class InfoDump
 {
-    // Genom det här scriptet skriver man in all text i inspektorn
+    // Genom det här scriptet skriver man in all text i inspektorn - Markus
     [TextArea(4, 10)]
     public string[] Sentences;
 }

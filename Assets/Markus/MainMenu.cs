@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// Skrivet av Markus
 public class MainMenu : MonoBehaviour
 {
     public SaveData save;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.None;

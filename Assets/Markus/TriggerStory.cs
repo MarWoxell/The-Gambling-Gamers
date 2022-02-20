@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Skrivet av Markus
+
+    /// <summary>
+    /// Gör att story startar som false och när man trycker på knappen (StoryTrigger) börjar dialogen hända
+    /// </summary>
 public class TriggerStory : MonoBehaviour
 {
     public InfoDump dialogue;

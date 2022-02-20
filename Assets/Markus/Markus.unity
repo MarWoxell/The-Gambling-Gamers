@@ -1130,6 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b21cde196ce94ca04fee609c58480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  save: {fileID: 0}
   StoryText: {fileID: 1195173509}
 --- !u!114 &997094988
 MonoBehaviour:
@@ -1450,6 +1451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf352e66ea2a59478481b2b178fbe12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  save: {fileID: 0}
 --- !u!1 &1077440989
 GameObject:
   m_ObjectHideFlags: 0
@@ -2505,7 +2507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0117d19dfb6ab5478008ad92a24d4f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
   betterTime: 0
   timer: {fileID: 639402756}
   bestScore: {fileID: 1848601533}
@@ -2835,7 +2836,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Your best time:'

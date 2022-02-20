@@ -28,10 +28,11 @@ public class Debt : MonoBehaviour, Interactable
         {
             Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 1;
+            timeSave.Save();
             DebtAmount = 0;
             SaveObject.instance.money -= 500;
             GetComponent<TriggerStory>().StoryTrigger();
-            timeSave.Save();
+            
         }
         SaveObject.instance.money = 0;
     }

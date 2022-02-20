@@ -2796,7 +2796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0117d19dfb6ab5478008ad92a24d4f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
   betterTime: 0
   timer: {fileID: 961507573}
   bestScore: {fileID: 1995195681}
@@ -2855,10 +2854,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 18371db36dac8e044a7222d6fb52f880, type: 3}
-    m_FontSize: 14
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -4548,7 +4547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DebtAmount: 50000
-  timeSave: {fileID: 0}
+  timeSave: {fileID: 961333059}
   player: {fileID: 1850709095}
 --- !u!114 &1530374150
 MonoBehaviour:
@@ -4562,7 +4561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2b21cde196ce94ca04fee609c58480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  save: {fileID: 0}
+  save: {fileID: 1947319347}
   StoryText: {fileID: 1050690990}
 --- !u!114 &1530374151
 MonoBehaviour:
@@ -5850,7 +5849,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1947319346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75181ca26f6700a4b84f514bbb2f0615, type: 3}
+  m_Script: {fileID: 11500000, guid: 258344d5f08f0014094998cbd5bd2fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1947319348

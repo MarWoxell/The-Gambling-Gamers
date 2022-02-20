@@ -4,13 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
+// Skrivet av Markus
 public class InfoManager : MonoBehaviour
 {
     public SaveData save;
 
-    // är saker för ljud
-
-    //public AudioSource AudioSource;
     public Text StoryText;
 
 
@@ -20,11 +19,10 @@ public class InfoManager : MonoBehaviour
     // lägger dit alla meningar man har skrivit
     void Start()
     {
-        //AudioSource = GetComponent<AudioSource>();
         Sentences = new Queue<string>();
     }
 
-    // en funkion som gör att texten brjar 
+    // en funkion som gör att texten börjar 
     public void StartStory(InfoDump dialogue)
     {
         // clearar meningen efter den har blivit använd
@@ -56,9 +54,6 @@ public class InfoManager : MonoBehaviour
     // gör att en bokstav skrivs itaget istället för att skriva allt direkt
     IEnumerator TypeSentence(string Sentence)
     {
-        // audio play och stop gör att det bara spelar ljudet när den skriver
-
-        //AudioSource.Play();
         StoryText.text = "";
         foreach (char letter in Sentence.ToCharArray())
         {
@@ -66,9 +61,9 @@ public class InfoManager : MonoBehaviour
 
             yield return new WaitForSecondsRealtime(0.05f);
         }
-        //AudioSource.Stop();
     }
 
+    // kollar ifall man är i menyn eller huben när dialogen är klar och laddar olika scener beroende på vilken man är i
     public void EndDialogue()
     {
         Debug.Log("End of story");
