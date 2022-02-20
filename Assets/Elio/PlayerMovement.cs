@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     //Scribt by Elio
     public CharacterController playerController;
+    public StaminaSlider stamina;
     Vector3 playerVector;
     float gravity = -9.82f;
     public float speed;
@@ -34,13 +35,21 @@ public class PlayerMovement : MonoBehaviour
         playerController.Move(movement * speed * Time.deltaTime);
         playerController.Move(playerVector * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.LeftShift))
+
+        //Makes it so that you can sprint if you press down shift
+        if (Input.GetKey(KeyCode.LeftShift) && stamina.outOfStamina == false)
         {
-            speed = 24;
+            //Depletes stamina when you sprint and changes the stamina bar
+            speed = 18;
+            stamina.stamina -= 0.75f;
+            stamina.SetStamina(stamina.stamina);
         }
         else
         {
+            //Regains stamina when you don't sprint at half the speed compared to the stamina depletion, also changes the stamina bar
             speed = 12;
+            stamina.stamina += 0.375f;
+            stamina.SetStamina(stamina.stamina);
         }
     }
 }

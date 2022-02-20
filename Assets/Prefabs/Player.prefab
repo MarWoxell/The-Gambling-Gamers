@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 7129518057773384060}
+  stamina: {fileID: 0}
   speed: 12
 --- !u!143 &7129518057773384060
 CharacterController:
@@ -362,9 +363,13 @@ MonoBehaviour:
   maxHealth: 100
   moneyAmount: 100
   damage: 10
+  maxVignette: 0.7
+  minVignette: 0.4
+  interpolationPoint: 0
   invincibility: 0
-  volume: {fileID: 0}
   vignetteIntensity: 0
+  vignetteGoUp: 0
+  volume: {fileID: 0}
   healthBar: {fileID: 0}
   PlayerAudio: {fileID: 1119756}
   PickupSound: {fileID: 8300000, guid: fdab8851a0707b44db0fceeea5d29e93, type: 3}

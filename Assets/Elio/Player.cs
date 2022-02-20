@@ -6,7 +6,6 @@ using UnityEngine.Rendering.PostProcessing;
 //Script by Elio
 public class Player : MonoBehaviour
 {
-    //public static int money;
     public int realMoney;
     public int maxHealth = 100;
     public int moneyAmount;
@@ -27,7 +26,8 @@ public class Player : MonoBehaviour
 
     IEnumerator InvincibilityFrame()
     {
-        //Makes the player invincible and turns the vignette up, waits for one second, then makes vignette start to go down, then waits for one second, then turns off invincibility
+        /*Makes the player invincible and turns the vignette up, waits for one second, then makes vignette start to go down, 
+        then waits for one second, then turns off invincibility*/
         invincibility = true;
         vignetteGoUp = true;
         yield return new WaitForSecondsRealtime(1);
@@ -62,23 +62,27 @@ public class Player : MonoBehaviour
     }
     public void OnCollisionEnter(Collision collision)
     {
-        //If the player gets hit by a projectile while they aren't invincible then they take damage, their healthbar is lowered, they say ouch  and becomes invincible
-        if (collision.collider.tag == "Projectile" && invincibility == false)
+        //If the player gets hit by a projectile while they aren't invincible then they take damage, their healthbar is lowered, they say ouch and becomes invincible
+        if (collision.collider.tag == "Projectile" && invincibility == false || collision.collider.tag == "ShankEnemy" && invincibility == false)
         {
             healthBar.playerhp -= damage;
             healthBar.takedamage(damage);
             PlayerAudio.PlayOneShot(OuchSound);
             StartCoroutine(InvincibilityFrame());
         }
+        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        /*Makes sure that interpolationPoint can't go over or under 0-1 and changes the vignette point based on vignetteIntensity 
+        which in turn is based on the interpolationPoint*/
         interpolationPoint = Mathf.Clamp(interpolationPoint, 0, 1);
         vignette.intensity.value = vignetteIntensity;
         vignetteIntensity = Mathf.Lerp(minVignette, maxVignette, interpolationPoint);
         
+        //Makes the vignette go up and down when you take damage
         if(invincibility == true && vignetteIntensity <= 0.7f && vignetteIntensity >= 0.4f)
         {
             if(vignetteGoUp == true)
@@ -93,13 +97,14 @@ public class Player : MonoBehaviour
         }
 
         print(SaveObject.instance.money);
+
+        //If you're dead then the death screen will pop up and you can move you mouse again
         if (healthBar.playerhp <= 0)
         {
             hpsliderscript.isDead = true;
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
             healthBar.deadoverlay.SetActive(true);
-            //SceneManager.LoadScene();
         }
         else
         {

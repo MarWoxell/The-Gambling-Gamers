@@ -7,10 +7,11 @@ using UnityEngine.UI;
 public class SpawnEnemy : MonoBehaviour
 {
     //Script by Elio
-    public GameObject enemyPrefab;
+    public GameObject[] enemyPrefab;
     public Transform[] spawnPoints;
     public Text wave;
     public int[] waveAmount;
+    public int enemyType;
     public int i;
     public int z;
     public int spawnPosition;
@@ -24,12 +25,6 @@ public class SpawnEnemy : MonoBehaviour
         waveNumber = 1;
     }
 
-    IEnumerator EnemySpawnCooldown()
-    {
-        //Waits for some time
-        yield return new WaitForSecondsRealtime(1);
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -37,12 +32,13 @@ public class SpawnEnemy : MonoBehaviour
         if (areThereEnemiesAlive == 0)
         {
             StartCoroutine(NextWave());
+            //Makes it so that the next wave to come will have twice as many enemies as the last wave
             waveAmount[waveNumber] = waveAmount[waveNumber - 1] * 2;
 
             //Spawns the enemy according to the amount speciefied in waveAmount
             for (i = 0; i <= waveAmount[waveNumber]; i++)
             {
-                //Resets the amount of enemies allive to the new amount of enemies coming
+                //Resets the amount of enemies alive to the new amount of enemies coming
                 if (i == 0)
                 {
                     areThereEnemiesAlive = waveAmount[waveNumber];
@@ -50,8 +46,7 @@ public class SpawnEnemy : MonoBehaviour
                 //Spawns enemy after a cooldown
                 else
                 {
-                    StartCoroutine(EnemySpawnCooldown());
-                    SpawnsEnemy();
+                    StartCoroutine(SpawnsEnemy());
                 }
 
 
@@ -62,15 +57,19 @@ public class SpawnEnemy : MonoBehaviour
         }
     }
 
-    public void SpawnsEnemy()
+    public IEnumerator SpawnsEnemy()
     {
-
+        //Waits for a second
+        yield return new WaitForSecondsRealtime(3);
+        //Spawns an enemy in one of eight different positions
         spawnPosition = Random.Range(0, 8);
-        //Spawns enemy
-        Instantiate(enemyPrefab, spawnPoints[spawnPosition].position, spawnPoints[spawnPosition].rotation);
+        enemyType = Random.Range(0, 2);
+        print(enemyType);
+        Instantiate(enemyPrefab[enemyType], spawnPoints[spawnPosition].position, spawnPoints[spawnPosition].rotation);
     }
     public IEnumerator NextWave()
     {
+        //Shows that the "Starting wave" text, waits for three seconds, then makes the text dissapear
         wave.text = "Starting wave " + waveNumber.ToString();
         yield return new WaitForSecondsRealtime(3);
         wave.text = null;

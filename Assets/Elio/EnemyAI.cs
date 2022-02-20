@@ -18,11 +18,6 @@ public class EnemyAI : MonoBehaviour
     float distance;
     private bool hasAttacked;
     private bool noDoubles = true;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
     IEnumerator EnemyShootCooldown()
     {
         //If the game is not paused the enemy will wait between 3-5 seconds until it can attack again
