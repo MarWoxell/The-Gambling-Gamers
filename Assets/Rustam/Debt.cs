@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Rustam
 public class Debt : MonoBehaviour, Interactable
 {
-    public int DebtAmount = 500;
+    //Ett simeplt skript som checkar för om du har tillräckligt med pengar för att betala av din skuld, och ifall du gör sparar den, drar av pengarna och spelar storyn
+    public int DebtAmount;
     public TimeSave timeSave;
 
 
@@ -24,13 +25,13 @@ public class Debt : MonoBehaviour, Interactable
 
     public void Thing()
     {
-        if (SaveObject.instance.money >= 500)
+        if (SaveObject.instance.money >= DebtAmount)
         {
             Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 1;
             timeSave.Save();
             DebtAmount = 0;
-            SaveObject.instance.money -= 500;
+            SaveObject.instance.money -= DebtAmount;
             GetComponent<TriggerStory>().StoryTrigger();
             
         }

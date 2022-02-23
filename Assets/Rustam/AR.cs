@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Rustam
 public class AR : BaseWeapon
 {
-    private float ActualFireRate;
+    //Detta skript ärver från BaseWeapon med små ändringar till statistik och en automatisk firemode
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,11 +36,11 @@ public class AR : BaseWeapon
 
     IEnumerator FirePause()
     {
-        //Cooldownen startas
+        //Cooldownen för att skjuta startas och man skjuter
         StopShoot = true;
         yield return null;
         base.Fire();
-        //0.25 Sekunder senare slutar cooldownen
+        //0.15 Sekunder senare slutar cooldownen och man kan skjuta igen
         yield return new WaitForSeconds(0.15f);
         StopShoot = false;
     }

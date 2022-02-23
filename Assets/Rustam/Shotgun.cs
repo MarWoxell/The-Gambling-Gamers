@@ -16,6 +16,7 @@ public class Shotgun : BaseWeapon
     // Update is called once per frame
     void Update()
     {
+        //Låter dig vara skjuta om du har shotgunen och inget annat interruptar
         if (SaveObject.instance.shotgunLv > 0 && WeaponActive == true && IsReloading == false && StopShoot == false)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -35,26 +36,20 @@ public class Shotgun : BaseWeapon
         StopShoot = true;
         yield return null;
         Fire();
-        //0.25 Sekunder senare slutar cooldownen
+        //1 Sekunder senare slutar cooldownen
         yield return new WaitForSeconds(1f);
         StopShoot = false;
     }
     public override void Fire()
     {
+        //Allt det här är basically samma sak som i baseweapon, men med random deviation på skotten
         print("Firing");
         if(Ammo > 0)
         {
             for (int i = 1; i <= Shellcount; i++)
             {
-                /*Vector3 ForwardVector = Vector3.forward;
-                float Deviation = Random.Range(0f, MaxDev);
-                ForwardVector = Quaternion.AngleAxis(Deviation, Vector3.up) * ForwardVector;
-                ForwardVector = Cam.transform.rotation * ForwardVector;*/
 
-                /*Vector3 ForwardVector = Cam.transform.forward;
-                ForwardVector += MaxDev * (Random.Range(0, 2)) * Cam.transform.right;
-                ForwardVector += MaxDev * (Random.Range(0, 2)) * Cam.transform.up;*/
-
+                //Skapar en offset och lägger den på centrala kameran
                 var v3Offset = transform.up * Random.Range(0.0f, MaxDev);
                 v3Offset = Quaternion.AngleAxis(Random.Range(0.0f, 360.0f), transform.forward) * v3Offset;
                 Vector3 ForwardVector = transform.forward + v3Offset;

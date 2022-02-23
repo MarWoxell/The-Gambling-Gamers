@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Pistol : BaseWeapon
 {
-
+    //Rustam
+    //Ärver från Baseweapon
     // Start is called before the first frame update
     void Start()
     {

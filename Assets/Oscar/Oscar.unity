@@ -2185,7 +2185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9e36be93e9f368141b89f8088b6e53b6, type: 3}
       propertyPath: m_Name
-      value: 50000 to Pay the Debt
+      value: Pay off your debt (50000 Coins)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9e36be93e9f368141b89f8088b6e53b6, type: 3}
       propertyPath: m_Layer
@@ -4300,7 +4300,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 248d52e19679e014c83d2a8b627352cc, type: 2}
     - target: {fileID: 919132149155446097, guid: c8268cbbb1839984fa48924b34316dc2, type: 3}
       propertyPath: m_Name
-      value: 1000 Coins To Spin for mony
+      value: Play roulette for money (1000 Coins)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c8268cbbb1839984fa48924b34316dc2, type: 3}
       propertyPath: m_Layer
@@ -6397,7 +6397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 07a8deae1cf860845b38c0cd635af799, type: 3}
       propertyPath: m_Name
-      value: 1000 Coins To Spin for guns
+      value: Use the Gun-Upgrading Slot Machine (1000 Coins)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 07a8deae1cf860845b38c0cd635af799, type: 3}
       propertyPath: m_Layer

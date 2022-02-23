@@ -6,7 +6,7 @@ using TMPro;
 //Detta skript var skrivet av Rustam
 public class Spherecast : MonoBehaviour
 {
-    //public RawImage Prompt;
+    
     public Text EnterText;
     private string EnterString;
     [SerializeField]
@@ -22,10 +22,10 @@ public class Spherecast : MonoBehaviour
     {
         EnterText.text = EnterString;
         RaycastHit hit;
-
-        if (Physics.CheckSphere(transform.position, 3, mask))
+        //checkar inom en sfär av x för objekt med interfacen interactable, och ifall den gör det så får man se en promt och möjligheten att interacta med E
+        if (Physics.CheckSphere(transform.position, 1.5f, mask))
         {
-            foreach (Collider Col in Physics.OverlapSphere(transform.position, 3, mask))
+            foreach (Collider Col in Physics.OverlapSphere(transform.position, 1.5f, mask))
             {
                 //Checkar för objekt inom en sfär runt spelaren
                 Transform cols = Col.transform;
@@ -55,7 +55,7 @@ public class Spherecast : MonoBehaviour
     {
         Gizmos.color = Color.blue;
         //Gizmos.DrawWireSphere(SpherePos.position, 2);
-        Gizmos.DrawWireSphere(transform.position, 3);
+        Gizmos.DrawWireSphere(transform.position, 1.5f);
         //Ritar en cirkel kring spelar i editorn för debugging
     }
 }

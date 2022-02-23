@@ -34,6 +34,7 @@ public class Gacha : MonoBehaviour, Interactable
     {
         if (SaveObject.instance.money >= 1000)
         {
+            //Låter dig gambla om du har 1000 pengar
             Gamble();
         }
     }
@@ -44,6 +45,7 @@ public class Gacha : MonoBehaviour, Interactable
         PlayerAudio.PlayOneShot(GamblingSound);
         int Result = Random.Range(1, 4);
         print(Result);
+        //Skriptet kör en random.range från 1 till 3, och höjer din pistol level om du får 1, ak level om du får 2 osv
         if(Result == 1)
         {
             SaveObject.instance.pistolLv++;
@@ -66,6 +68,7 @@ public class Gacha : MonoBehaviour, Interactable
     }
     public IEnumerator Icon(Sprite sprit)
     {
+        //Gör korresponderade sprite synlig på automaten i tre sekunder
         yield return null;
         renderer1.sprite = sprit;
         renderer2.sprite = sprit;

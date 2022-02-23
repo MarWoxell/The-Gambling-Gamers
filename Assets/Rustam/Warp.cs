@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//Rustam
 public class Warp : MonoBehaviour, Interactable
 {
     public Object Destination;
@@ -20,5 +21,6 @@ public class Warp : MonoBehaviour, Interactable
     public void Thing()
     {
         SceneManager.LoadScene(Destination.name);
+        //En interface som tar dig till scen X
     }
 }

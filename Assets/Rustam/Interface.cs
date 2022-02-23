@@ -5,6 +5,7 @@ using UnityEngine;
 
 public interface Interactable
 {
+    //En simpel interface skriven av rustam
     void Thing();
     //Grundinterfacen som får objektet att göra thing
 }

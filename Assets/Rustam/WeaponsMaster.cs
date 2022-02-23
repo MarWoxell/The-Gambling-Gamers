@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Rustam
 public class WeaponsMaster : MonoBehaviour
 {
     public Pistol pistol;
@@ -13,14 +13,14 @@ public class WeaponsMaster : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    { //Ser till att man börjar med smgn
+    { //Ser till att man börjar med Pistolen
 
         PistolActive();
     }
 
     // Update is called once per frame
     void Update()
-    { //När man trycker på e så cyclas listan av vapen
+    { //Byter till ett vapen baserat på vilken knapp du trycker på
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
             PistolActive();
@@ -36,6 +36,7 @@ public class WeaponsMaster : MonoBehaviour
     }
    void PistolActive()
     {
+        //Deaktiverar alla andra vapen, ändrar spriten, ändrar ammo promten och positionen för vart bullet trailen kommer från
         pistol.WeaponActive = true;
         ak.WeaponActive = false;
         shotgun.WeaponActive = false;
@@ -46,6 +47,7 @@ public class WeaponsMaster : MonoBehaviour
     }
     void AKActive()
     {
+        //Samma sak som pistolactive
         pistol.WeaponActive = false;
         ak.WeaponActive = true;
         shotgun.WeaponActive = false;
@@ -56,6 +58,7 @@ public class WeaponsMaster : MonoBehaviour
     }
     void ShotgunActive()
     {
+        //Samma sak som pistolactive
         pistol.WeaponActive = false;
         ak.WeaponActive = false;
         shotgun.WeaponActive = true;

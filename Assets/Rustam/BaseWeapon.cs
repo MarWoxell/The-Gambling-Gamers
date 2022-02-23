@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//Detta skript var skrivet av Rustam
 public class BaseWeapon : MonoBehaviour
 {
+    #region Variabler
     public WeaponsMaster WeaponManager;
 
     public AudioClip ShootSound;
@@ -31,12 +32,12 @@ public class BaseWeapon : MonoBehaviour
     public Sprite FireSprite;
     public Image WeaponRenderer;
     public Text ReloadText;
-
+    #endregion
     // Start is called before the first frame update
     public virtual void Start()
     {
+        //Gör så att man börjar med ett fullt magasin
         Ammo = MagSize;
-
         WeaponManager = GetComponent<WeaponsMaster>();
     }
 
@@ -47,15 +48,13 @@ public class BaseWeapon : MonoBehaviour
     }
     public virtual void Fire()
     {
-        audioSource.PlayOneShot(ShootSound, 1F);
+        //Skickar ut en raycast från kameran
         RaycastHit hit;
-
- 
         if(Physics.Raycast(Cam.transform.position, Cam.transform.forward, out hit, Range, ~mask))
-            
           {
           if(Ammo > 0)
             {
+                //Allt visuella sker här. Det spelas ett ljud, spriten ändras och en lysande bullettrail skickas ut.
                 audioSource.PlayOneShot(ShootSound);
                 this.StartCoroutine(Animation());
                 TrailRenderer Trail = Instantiate(BulletTrail, TrailStart.transform.position, Quaternion.Euler(Cam.transform.forward));
@@ -64,6 +63,7 @@ public class BaseWeapon : MonoBehaviour
 
                 StartCoroutine(SpawnTrail(Trail, hit));
 
+                //Raycasten checkar vad den kolliderar med. Den gör skada ifall den prickar en fiende, gör dubbel skada ifall den prickar ett huvud och förstör projektilen ifall den prickar en.
                 EnemyAI enemy = hit.transform.GetComponent<EnemyAI>();
                 if (enemy != null)
                 {
@@ -83,16 +83,17 @@ public class BaseWeapon : MonoBehaviour
                 Ammo--;
             }
               else
-          {
+            {
+                //Om magasinet är tomt/om man trycker på R så börjar reloaden
                 StartCoroutine(Reload());
             }
         }
     }
     public IEnumerator Reload()
     {
+        //Aktiverar en variabel för att undvika stacking av reloads, aktiverar en ljudeffekt och en promt och sedan gör magasinet fullt och deaktiverar variabeln så att man kan ladda om igen.
         IsReloading = true;
         Ammo = 0;
-        print("Reloading");
         ReloadText.text = "Reloading...";
         audioSource.PlayOneShot(ReloadSound);
         yield return new WaitForSeconds(Reloadtime);
@@ -102,7 +103,7 @@ public class BaseWeapon : MonoBehaviour
     }
     public virtual IEnumerator Animation()
     {
-        print("normal");
+        //Flashar skjutspriten i en halv sekund och sedan återvänder till en idlesprite. Man skulle ha kunnat använda en animator med vi hade problem med animationsträdet.
         yield return null;
         WeaponRenderer.sprite = FireSprite;
         yield return new WaitForSeconds(0.5f);
@@ -110,6 +111,7 @@ public class BaseWeapon : MonoBehaviour
     }
     public IEnumerator SpawnTrail(TrailRenderer Trail, RaycastHit Hit)
     {
+        //Gör så att trailen tar sig från startpositionen till stället man prickar på en sekund och efter det så förstörs trailen.
         float time = 0;
         Vector3 startPosition = Trail.transform.position;
 
@@ -125,6 +127,7 @@ public class BaseWeapon : MonoBehaviour
     }
     public virtual void DamageFormula()
     {
+        //Gör så att skadan ökar linjärt med vapenleveln.
         Damage = BaseDamage + (5 * (WeaponLVL - 1 ));
     }
 }

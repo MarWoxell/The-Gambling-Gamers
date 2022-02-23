@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//Rustam
 public class MusicManager : MonoBehaviour
 {
 
@@ -12,6 +12,7 @@ public class MusicManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Spelar bara rätt musik på loop
         PlayerSource.Play();
         PlayerSource.loop = true;
     }
