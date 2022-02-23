@@ -15,6 +15,11 @@ public class Projectile : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (collision.collider.tag == "Terrain")
+        {
+            Destroy(this.gameObject);
+        }
+
     }
     // Start is called before the first frame update
     void Start()

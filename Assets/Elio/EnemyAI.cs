@@ -14,6 +14,9 @@ public class EnemyAI : MonoBehaviour
     public GameObject Blood;
     public PauseMenu pause;
     public hpsliderscript healthbar;
+    public AudioSource playerAudio;
+    public AudioClip deathOuch;
+
     public int drops;
     float distance;
     private bool hasAttacked;
@@ -27,11 +30,8 @@ public class EnemyAI : MonoBehaviour
         }
         //Waits for some time
         yield return new WaitForSecondsRealtime(Random.Range(3f, 5f));
-        if(pause.paused == false)
-        {
         hasAttacked = false;
         noDoubles = true;
-        }
     }
     public void Attack()
     {
@@ -99,8 +99,9 @@ public class EnemyAI : MonoBehaviour
         //If the player's head's health becomes zero
         if (head.health <= 0)
         {
-            //Instantiates blood in enemy's position
+            //Instantiates blood in enemy's position and plays death sound (That happens to be really quiet)
             Instantiate(Blood, transform.position, transform.rotation);
+            playerAudio.PlayOneShot(deathOuch);
             //50 / 50 chance to drop either a healing item or money if the enemy is not at full health but if player is at full health it always drops money
             if (drops == 0 && healthbar.playerhp < 100)
             {

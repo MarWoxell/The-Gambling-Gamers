@@ -9,6 +9,7 @@ TagManager:
   - Money
   - HealthPack
   - ShankEnemy
+  - Terrain
   layers:
   - Default
   - TransparentFX

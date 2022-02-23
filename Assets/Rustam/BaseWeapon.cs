@@ -69,6 +69,12 @@ public class BaseWeapon : MonoBehaviour
                 {
                     enemy.TakeDamage(Damage);
                 }
+                ShankEnemyAI shankEnemy = hit.transform.GetComponent<ShankEnemyAI>();
+                if (shankEnemy != null)
+                {
+                    shankEnemy.TakeDamage(Damage);
+                }
+
                 EnemyHead enemyHead = hit.transform.GetComponent<EnemyHead>();
                 if(enemyHead != null)
                 {
