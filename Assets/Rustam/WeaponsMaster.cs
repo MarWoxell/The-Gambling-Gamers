@@ -25,11 +25,11 @@ public class WeaponsMaster : MonoBehaviour
         {
             PistolActive();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2) && ak.WeaponLVL > 0)
+        if (Input.GetKeyDown(KeyCode.Alpha2) && SaveObject.instance.arLv > 0)
         {
             AKActive();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3) && shotgun.WeaponLVL > 0)
+        if (Input.GetKeyDown(KeyCode.Alpha3) && SaveObject.instance.shotgunLv > 0)
         {
             ShotgunActive();
         }
