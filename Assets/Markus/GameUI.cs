@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+// Markus
 public class GameUI : MonoBehaviour
 {
     public Text money;
@@ -20,6 +20,7 @@ public class GameUI : MonoBehaviour
         gunNumber = 0;
     }
 
+    // updaterar UI
     public void Update()
     {
         money.text = "$" + SaveObject.instance.money.ToString();
@@ -38,6 +39,9 @@ public class GameUI : MonoBehaviour
         }
 
     } 
+
+    // Gör att texten i UI ändras i spelet beroende på knappar
+
     public void ShotgunText()
     {
         gun.text = ("Shotgun");
