@@ -10,6 +10,7 @@ TagManager:
   - HealthPack
   - ShankEnemy
   - Terrain
+  - Enemy
   layers:
   - Default
   - TransparentFX
