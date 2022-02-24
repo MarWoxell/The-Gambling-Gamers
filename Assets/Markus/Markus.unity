@@ -1163,6 +1163,19 @@ MonoBehaviour:
       don\u2019t think you\u2019ll survive without a scratch. Expect that if you
       beat an enemy, double the amount will attack you next. Best of luck to you.\u201D
       Better get to shootin\u2019."
+    - 'Before you go though you may want to know some buttons.
+
+      W.A.S.D to
+      move around
+
+      Escape to pause
+
+      Mouse 1 to shoot
+
+      E to interact
+
+      Shift
+      to sprint'
   story: {fileID: 801412789}
 --- !u!4 &997094989
 Transform:
