@@ -11,6 +11,7 @@ TagManager:
   - ShankEnemy
   - Terrain
   - Enemy
+  - OutOfBounds
   layers:
   - Default
   - TransparentFX

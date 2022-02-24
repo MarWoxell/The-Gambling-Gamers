@@ -837,7 +837,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec475213db4731458a715749d2c3665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1963909533}
+  enemyPrefab:
+  - {fileID: 0}
   spawnPoints:
   - {fileID: 1293322791}
   - {fileID: 1358520602}
@@ -848,7 +849,10 @@ MonoBehaviour:
   - {fileID: 229463571}
   - {fileID: 1404806922}
   wave: {fileID: 942090491}
+  playerAudio: {fileID: 0}
+  yaaay: {fileID: 0}
   waveAmount: 0a0000001e000000320000004b00000064000000
+  enemyType: 0
   i: 0
   z: 0
   spawnPosition: 0
@@ -1780,14 +1784,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97dff0426ad4d394683c0bceb5dc0898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyAnimation: {fileID: 0}
   agent: {fileID: 1963909539}
   player: {fileID: 405042404}
   head: {fileID: 0}
   enemy: {fileID: 1963909533}
   projectilePrefab: {fileID: 8535082091285017064, guid: de617f305ff67cb479b684e91da8075d, type: 3}
   moneyPrefab: {fileID: 6298091969150044683}
-  healhtPrefab: {fileID: 0}
+  healthPrefab: {fileID: 0}
+  Blood: {fileID: 0}
   pause: {fileID: 0}
+  healthbar: {fileID: 0}
+  playerAudio: {fileID: 0}
+  deathOuch: {fileID: 0}
   drops: 0
 --- !u!195 &1963909539
 NavMeshAgent:
@@ -2123,6 +2132,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1536328528448164326
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949782351318569184, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428503962762670894, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
+      propertyPath: m_Name
+      value: OutOfBounds
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 820c4bbae7aaa7c429b1d64d1a080900, type: 3}
 --- !u!23 &2232876955186965874
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2242,7 +2308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 7129518057773384061, guid: 75013be02a8d0104a878b7b6c5e7a55c, type: 3}
-  healthBar: {fileID: 2057262391}
   projectileSpeed: 10
 --- !u!1001 &6298091969150044682
 PrefabInstance:

@@ -59,6 +59,10 @@ public class Player : MonoBehaviour
             PlayerAudio.PlayOneShot(PickupSound);
             Destroy(other.gameObject);
         }
+        if (other.gameObject.tag == "OutOfBounds")
+        {
+            transform.position = new Vector3(0, 0, 0);
+        }
     }
     public void OnCollisionEnter(Collision collision)
     {
