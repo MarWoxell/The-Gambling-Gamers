@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class watchAD : MonoBehaviour
 {// variblar för att kolla på våran add skelva vidio playern ad bolen så man inte kan kolla flera gånger i samma play trow och sedan tiden för ad
     public GameObject ad;
+    public hpsliderscript hpSlider;
     public bool abeltowatch;
     public float adtime = 30;
     private void Start()
@@ -19,7 +20,9 @@ public class watchAD : MonoBehaviour
        
         if(abeltowatch == (false))
         {
+            Time.timeScale = 1;
             adtime -= Time.deltaTime;
+            
             print(adtime);
             
             if (adtime <= 0)
@@ -27,12 +30,13 @@ public class watchAD : MonoBehaviour
                 print("heald");
                 ad.SetActive(false);
 
-                GetComponent<hpsliderscript>().heal(100);
+               
 
-                GetComponent<hpsliderscript>().deadoverlay.SetActive(false);
+                hpSlider.deadoverlay.SetActive(false);
+
+                hpSlider.heal(100);
 
 
-                Time.timeScale = 1;
 
                 Cursor.lockState = CursorLockMode.Locked;
 
