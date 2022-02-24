@@ -10,6 +10,8 @@ public class SpawnEnemy : MonoBehaviour
     public GameObject[] enemyPrefab;
     public Transform[] spawnPoints;
     public Text wave;
+    public AudioSource playerAudio;
+    public AudioClip yaaay;
     public int[] waveAmount;
     public int enemyType;
     public int i;
@@ -71,6 +73,10 @@ public class SpawnEnemy : MonoBehaviour
     {
         //Shows that the "Starting wave" text, waits for three seconds, then makes the text dissapear
         wave.text = "Starting wave " + waveNumber.ToString();
+        if(waveNumber > 1)
+        {
+            playerAudio.PlayOneShot(yaaay, 3f);
+        }
         yield return new WaitForSecondsRealtime(3);
         wave.text = null;
     }

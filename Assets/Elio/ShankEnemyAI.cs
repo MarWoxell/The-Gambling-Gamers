@@ -61,7 +61,7 @@ public class ShankEnemyAI : MonoBehaviour
         {
             //Instantiates blood in enemy's position and plays death sound (That happens to be really quiet)
             Instantiate(Blood, transform.position, transform.rotation);
-            playerAudio.PlayOneShot(deathOuch);
+            playerAudio.PlayOneShot(deathOuch, 10f);
 
             //50 / 50 chance to drop either a healing item or money if the enemy is not at full health but if player is at full health it always drops money
             if (drops == 0 && healthbar.playerhp < 100)
