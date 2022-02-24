@@ -17,9 +17,9 @@ public class Gambling : MonoBehaviour, Interactable
     {// när vi börjar så tar jag bort 1000 sedan så skapar jag en radom som bestämer ifall du vinner eller inte
         SaveObject.instance.money -= 1000;
 
-        int rangmony = Random.Range(1, 4);
+        int rangmony = Random.Range(1, 10);
         
-        if (rangmony >= 2)
+        if (rangmony >= 3)
         {//ifall den är 2 eller mindre så viner du och då skapas en till random som ifalld u akn vinna mycket med pengar 20000 för att vara exakt
             int dubble = Random.Range(1, 500);
             
