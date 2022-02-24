@@ -18,7 +18,7 @@ public class GoToPlayer : MonoBehaviour
     {
         if (cam != null)
         {
-            transform.LookAt(cam.transform, Vector3.up);
+            transform.LookAt(cam.transform.position - new Vector3(0, 1, 0), Vector3.up);
         }
         else
         {
