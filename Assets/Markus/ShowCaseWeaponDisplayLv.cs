@@ -28,8 +28,8 @@ public class ShowCaseWeaponDisplayLv : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pistol.text = SaveObject.instance.pistolLv.ToString();
-        shotgun.text = SaveObject.instance.shotgunLv.ToString();
-        ar.text = SaveObject.instance.arLv.ToString();
+        pistol.text = "Pistol Level - " + SaveObject.instance.pistolLv.ToString();
+        shotgun.text = "Shotgun Level - " + SaveObject.instance.shotgunLv.ToString();
+        ar.text = "AR Level - " + SaveObject.instance.arLv.ToString();
     }
 }
