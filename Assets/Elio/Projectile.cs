@@ -11,7 +11,11 @@ public class Projectile : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         //Destroys the projectile if it heits the player
-        Destroy(this.gameObject);
+        if (collision.collider.tag != "Enemy")
+        {
+            Destroy(this.gameObject);
+        }
+
     }
     // Start is called before the first frame update
     void Start()
