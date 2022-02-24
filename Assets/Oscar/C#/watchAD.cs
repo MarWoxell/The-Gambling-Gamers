@@ -35,7 +35,8 @@ public class watchAD : hpsliderscript
             }
         }
         else
-        {
+        {//kan ej kolla
+
             print("cant watch");
         }
 
