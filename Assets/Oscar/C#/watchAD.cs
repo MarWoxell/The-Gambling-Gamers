@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // Oscar
-public class watchAD : hpsliderscript
+public class watchAD : MonoBehaviour
 {// variblar för att kolla på våran add skelva vidio playern ad bolen så man inte kan kolla flera gånger i samma play trow och sedan tiden för ad
     public GameObject ad;
     public bool abeltowatch;
@@ -14,25 +14,42 @@ public class watchAD : hpsliderscript
         ad.SetActive(false);
         abeltowatch = (true);
     }
-    public void playAD()
-    {// på konapen så kolla förs ifal det är ens möjligt att kolla på aden och sedan så 
-        if (abeltowatch = (true))
-        {//startar aden startar också en timer och sedan säter timmern för hur lång den är på
-            ad.SetActive(true);
-            abeltowatch = false;
+    public void Update()
+    {
+       
+        if(abeltowatch == (false))
+        {
             adtime -= Time.deltaTime;
-
+            print(adtime);
+            
             if (adtime <= 0)
             {//säter tillback till liv playern och tar ner death overlyn
+                print("heald");
                 ad.SetActive(false);
-                heal(100);
-                isDead = false;
+
+                GetComponent<hpsliderscript>().heal(100);
+
+                GetComponent<hpsliderscript>().deadoverlay.SetActive(false);
+
+
                 Time.timeScale = 1;
-                deadoverlay.SetActive(false);
+
                 Cursor.lockState = CursorLockMode.Locked;
 
                 print("whatched ad");
             }
+        }
+    }
+    public void playAD()
+    {// på konapen så kolla förs ifal det är ens möjligt att kolla på aden och sedan så 
+        if (abeltowatch == (true))
+        {//startar aden startar också en timer och sedan säter timmern för hur lång den är på
+            abeltowatch = false;
+            ad.SetActive(true);
+           
+        
+            
+           
         }
         else
         {//kan ej kolla
